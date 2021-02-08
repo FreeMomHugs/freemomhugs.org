@@ -78,9 +78,9 @@
                                 <hr class="card-meta-divider">
 
                                 <!-- Avatar -->
-                                <div class="avatar avatar-sm mr-2">
-                                    <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                                </div>
+<!--                                <div class="avatar avatar-sm mr-2">-->
+<!--                                    <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">-->
+<!--                                </div>-->
 
                                 <!-- Author -->
                                 <h6 class="text-uppercase text-muted mr-2 mb-0">

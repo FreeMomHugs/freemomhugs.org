@@ -25,7 +25,7 @@ get_header();
 
                         <!-- Heading -->
                         <h1 class="display-2 font-weight-bold text-white">
-                            Newsroom
+                            <?php echo get_the_title(); ?>
                         </h1>
 
                         <!-- Text -->
@@ -50,18 +50,8 @@ get_header();
         get_template_part( 'template-parts/newsroom-cards', 'page' );
         ?>
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
-
-			get_template_part( 'template-parts/content', 'page' );
-
-
-		endwhile; // End of the loop.
-		?>
 
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();

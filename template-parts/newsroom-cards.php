@@ -49,25 +49,23 @@
              * called content-___.php (where ___ is the Post Format name) and that will be used instead.
              */
             ?>
-            <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="col-12 col-md-6 col-lg-4 d-flex pb-4">
 
                 <!-- Card -->
                 <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
 
-                    <!-- Image -->
-                    <a class="card-img-top" href="<?php echo the_permalink();?>">
-
                         <!-- Image -->
-                        <img src="<?php echo the_post_thumbnail_url(); ?>;" alt="..." class="card-img-top">
+                        <a class="card-img-top" href="<?php echo the_permalink();?>">
+                            <img src="<?php echo the_post_thumbnail_url();?>" alt="..." class="card-img-top">
+                        </a>
 
                         <!-- Shape -->
                         <div class="position-relative">
-                            <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>
+                            <div class="shape shape-fluid-x shape-bottom svg-shim text-white">
+                                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
                             </div>
                         </div>
 
-                    </a>
 
                     <!-- Body -->
                     <a class="card-body" href="<?php echo the_permalink();?>">
@@ -91,18 +89,26 @@
                         <hr class="card-meta-divider">
 
                         <!-- Avatar -->
-                        <div class="avatar avatar-sm mr-2">
-                            <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
-                        </div>
+<!--                        <div class="avatar avatar-sm mr-2">-->
+<!--                            <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">-->
+<!--                        </div>-->
 
-                        <!-- Author -->
+                        <!-- Category -->
                         <h6 class="text-uppercase text-muted mr-2 mb-0">
-                            <?php echo get_the_author();?>
+                            <?php
+                            $category = get_the_category();
+                            $catName = $category[0]->cat_name;
+                            echo $catName;
+                            ?>
                         </h6>
 
                         <!-- Date -->
                         <p class="h6 text-uppercase text-muted mb-0 ml-auto">
-                            <time datetime="2019-05-02">May 02</time>
+                            <time datetime="<?php echo get_the_date("Y-m-d");?>">
+                                <?php
+                                the_date('M d');
+                                ?>
+                            </time>
                         </p>
 
                     </a>

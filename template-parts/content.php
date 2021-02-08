@@ -50,12 +50,12 @@
 
                                 <!-- Name -->
                                 <h6 class="text-uppercase mb-0">
-                                    <?php echo wp_freemomhugs_posted_by(); ?>
+                                    <?php the_author(); ?>
                                 </h6>
 
                                 <!-- Date -->
-                                <time class="font-size-sm text-muted" datetime="2019-05-20">
-                                    <?php echo wp_freemomhugs_posted_on(); ?>
+                                <time class="font-size-sm text-muted text-decoration-none" datetime="2019-05-20">
+                                    Posted on <?php echo the_time('F j, Y'); ?>
                                 </time>
 
                             </div>
@@ -69,18 +69,13 @@
                                 <!-- Icons -->
                                 <ul class="d-inline list-unstyled list-inline list-social">
                                     <li class="list-inline-item list-social-item mr-3">
-                                        <a href="#!" class="text-decoration-none">
-                                            <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=#url" target="_blank" class="text-decoration-none">
+                                            <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
                                         </a>
                                     </li>
                                     <li class="list-inline-item list-social-item mr-3">
-                                        <a href="#!" class="text-decoration-none">
-                                            <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item list-social-item mr-3">
-                                        <a href="#!" class="text-decoration-none">
-                                            <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                                        <a href="https://twitter.com/intent/tweet/?text=<?php echo get_the_title(); ?>&amp;url=<?php echo get_the_permalink(); ?>" target="_blank" aria-label="" class="text-decoration-none">
+                                            <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
                                         </a>
                                     </li>
                                 </ul>
