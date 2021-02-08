@@ -13455,8 +13455,10 @@ body.compensate-for-scrollbar {
   transition: all .5s ease; }
 
 .bg-dark .footer-brand {
-  -webkit-filter: brightness(0) invert(1);
-          filter: brightness(0) invert(1); }
+  /*-webkit-filter: brightness(0) invert(1);*/
+  /*        filter: brightness(0) invert(1);*/
+  max-height: 4em;
+}
 
 .hljs {
   background-color: transparent; }

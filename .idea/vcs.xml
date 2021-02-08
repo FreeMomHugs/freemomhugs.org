@@ -2,5 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/WordPress-Extended-Bootstrap-Nav-Walker" vcs="Git" />
   </component>
 </project>

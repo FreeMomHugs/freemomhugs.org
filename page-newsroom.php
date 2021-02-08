@@ -47,6 +47,7 @@ get_header();
         </div>
         <?php
         get_template_part( 'template-parts/newsroom-first-post', 'page' );
+        get_template_part( 'template-parts/newsroom-cards', 'page' );
         ?>
 
 		<?php

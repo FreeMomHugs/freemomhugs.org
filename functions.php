@@ -155,10 +155,12 @@ function wp_freemomhugs_scripts() {
     wp_enqueue_style( 'jarallax', get_template_directory_uri() . '/assets/libs/jarallax/dist/jarallax.css',false,'1.1','all');
     wp_enqueue_style( 'quill', get_template_directory_uri() . '/assets/libs/quill/dist/quill.core.css',false,'1.1','all');
     wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/theme.min.js', array ( 'jquery' ), 1.1, true);
+    wp_enqueue_script( 'choices', get_template_directory_uri() . '/assets/libs/choices.js/public/assets/scripts/choices.min.js', 1.1, true);
 
     wp_style_add_data( 'wp-freemomhugs-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'wp-freemomhugs-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
