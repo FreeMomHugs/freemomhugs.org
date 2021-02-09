@@ -54,4 +54,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
+get_template_part( 'template-parts/shape', 'none');
 get_footer();

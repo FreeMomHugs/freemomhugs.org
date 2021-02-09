@@ -31,7 +31,7 @@
             <div class="container">
 
                 <!-- Brand -->
-                <a class="navbar-brand" href="./index.html">
+                <a class="navbar-brand" href="<?php echo get_bloginfo('wpurl');?>">
 
                     <img src="<?php
                     $custom_logo_id = get_theme_mod( 'custom_logo' );
