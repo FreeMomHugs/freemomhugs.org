@@ -144,22 +144,39 @@ add_action( 'widgets_init', 'wp_freemomhugs_widgets_init' );
  */
 function wp_freemomhugs_scripts() {
 //	wp_enqueue_style( 'wp-freemomhugs-style', get_stylesheet_uri(), array(), _S_VERSION );
-    wp_enqueue_style( 'theme', get_template_directory_uri() . '/assets/css/theme.css',false,'1.1','all');
-    wp_enqueue_style( 'aos', get_template_directory_uri() . '/assets/libs/aos/dist/aos.css',false,'1.1','all');
     wp_enqueue_style( 'feather', get_template_directory_uri() . '/assets/fonts/Feather/feather.css',false,'1.1','all');
     wp_enqueue_style( 'jquery.fancybox', get_template_directory_uri() . '/assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css',false,'1.1','all');
+    wp_enqueue_style( 'aos', get_template_directory_uri() . '/assets/libs/aos/dist/aos.css',false,'1.1','all');
     wp_enqueue_style( 'choices', get_template_directory_uri() . '/assets/libs/choices.js/public/assets/styles/choices.min.css',false,'1.1','all');
     wp_enqueue_style( 'flickity-fade', get_template_directory_uri() . '/assets/libs/flickity-fade/flickity-fade.css',false,'1.1','all');
     wp_enqueue_style( 'flickity', get_template_directory_uri() . '/assets/libs/flickity/dist/flickity.min.css',false,'1.1','all');
     wp_enqueue_style( 'vs2015', get_template_directory_uri() . '/assets/libs/highlightjs/styles/vs2015.css',false,'1.1','all');
     wp_enqueue_style( 'jarallax', get_template_directory_uri() . '/assets/libs/jarallax/dist/jarallax.css',false,'1.1','all');
     wp_enqueue_style( 'quill', get_template_directory_uri() . '/assets/libs/quill/dist/quill.core.css',false,'1.1','all');
-    wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/theme.min.js', array ( 'jquery' ), 1.1, true);
-    wp_enqueue_script( 'choices', get_template_directory_uri() . '/assets/libs/choices.js/public/assets/scripts/choices.min.js', 1.1, true);
+    wp_enqueue_style( 'theme', get_template_directory_uri() . '/assets/css/theme.css',false,'1.1','all');
+
+
+
+    wp_enqueue_script( 'script1', get_template_directory_uri() . '/assets/libs/jquery/dist/jquery.min.js',  1.1, true);
+    wp_enqueue_script( 'script2', get_template_directory_uri() . '/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js',  1.1, true);
+    wp_enqueue_script( 'script3', get_template_directory_uri() . '/assets/js/theme.min.js',  1.1, true);
+    wp_enqueue_script( 'script4', get_template_directory_uri() . '/assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js', 1.1, true);
+    wp_enqueue_script( 'script5', get_template_directory_uri() . '/assets/libs/aos/dist/aos.js', 1.1, true);
+    wp_enqueue_script( 'script6', get_template_directory_uri() . '/assets/libs/countup.js/dist/countUp.min.js', 1.1, true);
+    wp_enqueue_script( 'script7', get_template_directory_uri() . '/assets/libs/dropzone/dist/min/dropzone.min.js', 1.1, true);
+    wp_enqueue_script( 'script8', get_template_directory_uri() . '/assets/libs/flickity/dist/flickity.pkgd.min.js', 1.1, true);
+    wp_enqueue_script( 'script9', get_template_directory_uri() . '/assets/libs/imagesloaded/imagesloaded.pkgd.min.js', 1.1, true);
+    wp_enqueue_script( 'script10', get_template_directory_uri() . '/assets/libs/isotope-layout/dist/isotope.pkgd.min.js', 1.1, true);
+    wp_enqueue_script( 'script11', get_template_directory_uri() . '/assets/libs/jarallax/dist/jarallax.min.js', 1.1, true);
+    wp_enqueue_script( 'script12', get_template_directory_uri() . '/assets/libs/jarallax/dist/jarallax-video.min.js', 1.1, true);
+    wp_enqueue_script( 'script13', get_template_directory_uri() . '/assets/libs/jarallax/dist/jarallax-element.min.js', 1.1, true);
+    wp_enqueue_script( 'script14', get_template_directory_uri() . '/assets/libs/quill/dist/quill.min.js', 1.1, true);
+    wp_enqueue_script( 'script15', get_template_directory_uri() . '/assets/libs/smooth-scroll/dist/smooth-scroll.min.js', 1.1, true);
+    wp_enqueue_script( 'script16', get_template_directory_uri() . '/assets/libs/typed.js/lib/typed.min.js', 1.1, true);
 
     wp_style_add_data( 'wp-freemomhugs-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'wp-freemomhugs-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+//	wp_enqueue_script( 'wp-freemomhugs-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

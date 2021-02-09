@@ -12,7 +12,7 @@
 
                 <!-- Text -->
                 <p class="font-size-lg text-gray-600 mb-6 mb-md-0">
-                    From us to your inbox weekly.
+                    From us to your inbox monthly.
                 </p>
 
             </div>
