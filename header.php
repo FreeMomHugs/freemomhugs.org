@@ -18,6 +18,17 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+    <!-- Funraise Donate -->
+    <script>
+        (function(f,u,n,r,a,i,s,e){var data={window:window,document:document,tag:"script",data:"funraise",orgId:f,uri:u,common:n,client:r,script:a};var scripts;var funraiseScript;data.window[data.data]=data.window[data.data]||[];if(data.window[data.data].scriptIsLoading||data.window[data.data].scriptIsLoaded)return;data.window[data.data].loading=true;data.window[data.data].push("init",data);scripts=data.document.getElementsByTagName(data.tag)[0];funraiseScript=data.document.createElement(data.tag);funraiseScript.async=true;funraiseScript.src=data.uri+data.common+data.script+"?orgId="+data.orgId;scripts.parentNode.insertBefore(funraiseScript,scripts)})('ac466c9f-c8bb-4a53-a71f-f3cc66a34e9f','https://assets.funraise.io','/widget/common/2.0','/widget/client','/inject-form.js');
+    </script>
+    <script>
+        window.funraise.push('create', { form: 8370 });
+    </script>
+
+
+
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -75,7 +86,7 @@
                 </ul>
 
                 <!-- Button -->
-                <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="https://themes.getbootstrap.com/product/landkit/" target="_blank">
+                <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" data-formId="8370" target="_blank">
                     Donate
                 </a>
 
