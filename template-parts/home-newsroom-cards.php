@@ -50,7 +50,7 @@
                             <a class="card-img-top" href="<?php echo the_permalink();?>">
 
                                 <!-- Image -->
-                                <img src="<?php echo the_post_thumbnail_url(); ?>;" alt="..." class="card-img-top">
+                                <img src="<?php echo the_post_thumbnail_url(); ?>" alt="..." class="card-img-top">
 
                                 <!-- Shape -->
                                 <div class="position-relative">
