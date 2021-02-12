@@ -30,7 +30,7 @@ get_header();
 
                         <!-- Text -->
                         <p class="lead mb-0 text-white-75">
-                            Keep up to date with what we're working on! Landkit is an ever evolving theme with regular updates.
+                            Latest news and information from the Free Mom Hugs team
                         </p>
 
                     </div>

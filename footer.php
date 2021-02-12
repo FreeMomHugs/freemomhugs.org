@@ -47,6 +47,7 @@
                 </ul>
 
             </div>
+            <?php /*
             <div class="col-6 col-md-4 col-lg-2">
 
                 <!-- Heading -->
@@ -190,6 +191,7 @@
                 </ul>
 
             </div>
+ */ ?>
         </div> <!-- / .row -->
     </div> <!-- / .container -->
 </footer>

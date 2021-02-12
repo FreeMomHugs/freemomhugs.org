@@ -41,17 +41,17 @@
                             <div class="col-auto">
 
                                 <!-- Avatar -->
-                                <div class="avatar avatar-lg">
-                                    <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                                </div>
+<!--                                <div class="avatar avatar-lg">-->
+<!--                                    <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">-->
+<!--                                </div>-->
 
                             </div>
                             <div class="col ml-n5">
 
                                 <!-- Name -->
-                                <h6 class="text-uppercase mb-0">
-                                    <?php the_author(); ?>
-                                </h6>
+<!--                                <h6 class="text-uppercase mb-0">-->
+<!--                                    --><?php //the_author(); ?>
+<!--                                </h6>-->
 
                                 <!-- Date -->
                                 <time class="font-size-sm text-muted text-decoration-none" datetime="2019-05-20">

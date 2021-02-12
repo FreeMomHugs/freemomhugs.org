@@ -3,10 +3,10 @@
 ================================================== -->
 <section>
     <div class="container">
-        <div class="row justify-content-center pb-2">
+        <div class="row justify-content-center mb-4">
             <h1>What can we help you find?</h1>
         </div>
-        <div class="row">
+        <div class="row mb-15">
 
             <div class="col-12 col-md-6 col-lg-4">
 
@@ -26,15 +26,15 @@
 
                         <!-- Text -->
                         <p class="text-gray-700 mb-5">
-                            Issues related to logging in, out, or about multiple devices.
+                            Get connected with a group in your area.
                         </p>
 
                         <!-- Badge -->
-                        <span class="badge badge-pill badge-dark-soft">
-                  <span class="h6 text-uppercase">
-                    21 entries
-                  </span>
-                </span>
+<!--                        <span class="badge badge-pill badge-dark-soft">-->
+<!--                          <span class="h6 text-uppercase">-->
+<!--                            51 chapters-->
+<!--                          </span>-->
+<!--                        </span>-->
 
                     </div>
                 </div>
@@ -58,15 +58,15 @@
 
                         <!-- Text -->
                         <p class="text-gray-700 mb-5">
-                            Connecting with 3rd party apps to exchange data.
+                            Explore our educational and other resources.
                         </p>
 
                         <!-- Badge -->
-                        <span class="badge badge-pill badge-dark-soft">
-                  <span class="h6 text-uppercase">
-                    9 entries
-                  </span>
-                </span>
+<!--                        <span class="badge badge-pill badge-dark-soft">-->
+<!--                  <span class="h6 text-uppercase">-->
+<!--                    9 entries-->
+<!--                  </span>-->
+<!--                </span>-->
 
                     </div>
                 </div>
@@ -94,45 +94,17 @@
                         </p>
 
                         <!-- Badge -->
-                        <span class="badge badge-pill badge-dark-soft">
-                  <span class="h6 text-uppercase">
-                    14 entries
-                  </span>
-                </span>
+<!--                        <span class="badge badge-pill badge-dark-soft">-->
+<!--                  <span class="h6 text-uppercase">-->
+<!--                    14 entries-->
+<!--                  </span>-->
+<!--                </span>-->
 
                     </div>
                 </div>
 
             </div>
 
-                <!-- Card -->
-                <div class="card card-border border-danger shadow-lg lift lift-lg">
-                    <div class="card-body text-center">
-
-                        <!-- Icon -->
-                        <div class="icon-circle bg-danger text-white mb-5">
-                            <i class="fe fe-users"></i>
-                        </div>
-
-                        <!-- Heading -->
-                        <h4 class="font-weight-bold">
-                            Customizing
-                        </h4>
-
-                        <!-- Text -->
-                        <p class="text-gray-700 mb-5">
-                            Building custom modules on top of our platform.
-                        </p>
-
-                        <!-- Badge -->
-                        <span class="badge badge-pill badge-dark-soft">
-                  <span class="h6 text-uppercase">
-                    14 entries
-                  </span>
-                </span>
-
-                    </div>
-                </div>
 
             </div>
         </div> <!-- / .row -->
