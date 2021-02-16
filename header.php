@@ -40,7 +40,7 @@
 
         <!-- NAVBAR
 ================================================== -->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
             <div class="container">
 
             <!-- Brand -->

@@ -55,4 +55,5 @@ get_header();
 
 <?php
 get_template_part( 'template-parts/shape', 'none');
+get_template_part( 'template-parts/cta-newsletter-sub', 'none');
 get_footer();

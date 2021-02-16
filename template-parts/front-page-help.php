@@ -11,7 +11,8 @@
             <div class="col-12 col-md-6 col-lg-4">
 
                 <!-- Card -->
-                <div class="card card-border border-primary shadow-lg mb-6 mb-md-8 lift lift-lg">
+                <a href="/find-a-chapter/" class="text-decoration-none">
+                    <div class="card card-border border-primary shadow-lg mb-6 mb-md-8 lift lift-lg">
                     <div class="card-body text-center">
 
                         <!-- Icon -->
@@ -36,8 +37,9 @@
 <!--                          </span>-->
 <!--                        </span>-->
 
+                        </div>
                     </div>
-                </div>
+                </a>
 
             </div>
             <div class="col-12 col-md-6 col-lg-4">
