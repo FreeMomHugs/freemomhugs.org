@@ -102,8 +102,7 @@
                 <div class="col-12 col-md-10 col-lg-9 col-xl-8">
                     <!-- Text -->
                     <?php
-                    the_content(
-                    );
+                    the_content();
                     ?>
 
                 </div>

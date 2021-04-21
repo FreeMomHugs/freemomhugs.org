@@ -15,6 +15,14 @@
 get_header();
 ?>
 
+    <script>
+        window.fwSettings={
+            'widget_id':43000001812
+        };
+        !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}()
+    </script>
+    <script type='text/javascript' src='https://widget.freshworks.com/widgets/43000001812.js' async defer></script>
+
 	<main id="primary" class="site-main">
         <!-- WELCOME
         ================================================== -->
