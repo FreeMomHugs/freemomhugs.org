@@ -11085,7 +11085,7 @@ a.text-white:hover, a.text-white:focus {
 
 .card-body, .card-footer, .card-meta, .card-img, .card-img-top, .card-img-left, .card-img-right {
   position: relative;
-  min-height: 1px; }
+  min-height: 200px; }
 
 a.card, a.card-body, a.card-footer, a.card-meta {
   color: inherit; }
