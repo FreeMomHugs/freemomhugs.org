@@ -44,40 +44,6 @@
         </div>
         <div id="map"></div>
     </div>
-    <script>
-        var SELECTED_CITY_CLASS = "selected-city";
-
-        // Define camera boundaries and zoom ranges for San Francisco and Toronto.
-        var CITIES = {
-            sanfrancisco: {
-                region: new mapkit.CoordinateRegion(
-                    new mapkit.Coordinate(37.7812, -122.44755),
-                    new mapkit.CoordinateSpan(0.10, 0.11)
-                ),
-                zoomRange: new mapkit.CameraZoomRange(250, 15000)
-            },
-
-            toronto: {
-                region: new mapkit.CoordinateRegion(
-                    new mapkit.Coordinate(43.6451, -79.37505),
-                    new mapkit.CoordinateSpan(0.05, 0.11)
-                ),
-                zoomRange: new mapkit.CameraZoomRange(250, 20000)
-            }
-        }
-
-        // Initialize mapkit.
-        mapkit.init({
-            authorizationCallback: function(done) {
-                var xhr = new XMLHttpRequest();
-                xhr.open("GET", "/services/jwt");
-                xhr.addEventListener("load", function() {
-                    done(this.responseText);
-                });
-                xhr.send();
-            }
-        });
-    </script>
 <!--    <script>-->
 <!---->
 <!--        var LINE_WIDTH_DEFAULT = 0.5;-->
@@ -235,7 +201,10 @@
 <!---->
 <!--    </script>-->
     <script>
-
+        var MarkerAnnotation = mapkit.MarkerAnnotation,
+            clickAnnotation;
+        var sfo = new mapkit.Coordinate(37.7912, -122.44755),
+            work = new mapkit.Coordinate(37.7912, -122.40755);
         var SELECTED_CITY_CLASS = "selected-city";
 
         // Define camera boundaries and zoom ranges for San Francisco and Toronto.
@@ -275,6 +244,20 @@
             mapkit.removeEventListener("configuration-change", configurationChanged);
             setCity("sanfrancisco");
         });
+
+        // Setting properties on creation:
+        var sfoAnnotation = new MarkerAnnotation(sfo, { color: "#f4a56d", title: "SFO", glyphText: "✈️" });
+
+        // Setting properties after creation:
+        var workAnnotation = new MarkerAnnotation(work);
+        workAnnotation.color = "#969696";
+        workAnnotation.title = "Work";
+        workAnnotation.subtitle = "Apple Park";
+        workAnnotation.selected = "true";
+        workAnnotation.glyphText = "";
+
+        // Add and show both annotations on the map
+        map.showItems([sfoAnnotation, workAnnotation]);
 
         // Show the selected city on the map and highlight its name.
         function setCity(name) {
