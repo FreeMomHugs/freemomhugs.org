@@ -118,7 +118,7 @@
         mapkit.init({
             authorizationCallback: function(done) {
                 var xhr = new XMLHttpRequest();
-                xhr.open("GET", "https://callisto.freemomhugs.org/maps/jwt?site=http://127.0.0.1:8888");
+                xhr.open("GET", "https://callisto.freemomhugs.org/maps/jwt?site=https://freemomhugs.org");
                 xhr.addEventListener("load", function() {
                     done(this.responseText);
                 });
