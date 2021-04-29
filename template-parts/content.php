@@ -11,10 +11,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-        <!-- IMAGE
-        ================================================== -->
-        <section data-jarallax data-speed=".8" class="py-12 py-md-15 bg-cover jarallax" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);"></section>
-
         <!-- HEADER
         ================================================== -->
         <section class="pt-8 pt-md-11">
@@ -25,7 +21,7 @@
                         <!-- Heading -->
                         <?php
                         if ( is_singular() ) :
-                            the_title( '<h1 class="display-4 text-center">', '</h1>' );
+                            the_title( '<h1 class="display-4 text-center font-weight-bolder">', '</h1>' );
                         else :
                             the_title( '<h2 class="display-4 text-center"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
                         endif;
@@ -55,7 +51,7 @@
 
                                 <!-- Date -->
                                 <time class="font-size-sm text-muted text-decoration-none" datetime="2019-05-20">
-                                    Posted on <?php echo the_time('F j, Y'); ?>
+                                    <?php echo the_time('F j, Y'); ?>
                                 </time>
 
                             </div>
@@ -85,6 +81,9 @@
 
                     </div>
                 </div> <!-- / .row -->
+                <!-- Image -->
+                <img src="<?php echo get_the_post_thumbnail_url(); ?>"/>
+
             </div> <!-- / .container -->
         </section>
         <?php
