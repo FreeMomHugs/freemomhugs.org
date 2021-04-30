@@ -40,7 +40,7 @@
 
             /* Start the Loop */
 
-            $numposts = 20;
+            $numposts = 40;
             while ( $loop->have_posts() && $numposts > 0 ) : $loop->the_post();
 
             /*
@@ -55,6 +55,7 @@
                 <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
 
                         <!-- Image -->
+                    <a href="<?php echo the_permalink();?>">
                         <div class="card-img-top" href="<?php echo the_permalink();?>">
                             <img src="<?php echo the_post_thumbnail_url();?>" alt="..." class="card-img-top cover">
                         </div>
@@ -64,7 +65,7 @@
                                 <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
                             </div>
                         </div>
-
+                    </a>
 
                     <!-- Body -->
                     <a class="card-body" href="<?php echo the_permalink();?>">
