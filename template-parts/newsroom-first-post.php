@@ -61,7 +61,7 @@
                                 <!-- Heading -->
                                 <!-- Text -->
                                 <?php
-                                the_title( '<h3 class="font-weight-bolder">', '</h3>' );
+                                the_title( '<h2 class="font-weight-bolder">', '</h2>' );
                                 ?>
 
                                 <!-- Text -->
