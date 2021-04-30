@@ -3911,6 +3911,10 @@ input[type="button"].btn-block {
 .cover {
   object-fit: cover;
 }
+
+.fill {
+  object-fit: fill;
+}
 .card-img,
 .card-img-bottom {
   border-bottom-right-radius: calc(0.375rem - 0px);

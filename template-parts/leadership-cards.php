@@ -3,13 +3,13 @@
 <section class="py-8 py-md-11 mt-n10 mt-md-n14">
     <div class="container">
         <!-- Heading -->
-        <h1 class="pb-4">
+        <h1 class="pb-4 font-weight-bolder">
             <?php echo $args['section-title']; ?>
         </h1>
         <div class="row" id="portfolio" data-isotope='{"layoutMode": "fitRows"}'>
             <?php
             $filter = array(
-                'post_type' => 'post',
+                'post_type' => 'leadership',
                 'offset' => 0,
                 'category_name' => $args['category_name'],    //Selecting post category by name
                 'orderby' => 'date',
@@ -39,17 +39,17 @@
 
                     <!-- Image -->
                     <div class="card-zoom">
-                        <img src="<?php echo the_post_thumbnail_url();?>" class="card-img-top rounded shadow-light-lg" href="<?php echo the_permalink();?>" alt="...">
+                        <img src="<?php echo the_post_thumbnail_url();?>" class="card-img-top rounded shadow-light-lg cover" href="<?php echo the_permalink();?>" alt="...">
                     </div>
 
                     <!-- Footer -->
                     <div class="card-footer">
 
                         <!-- Preheading -->
-                        <h6 class="text-uppercase mb-1 text-muted"><?php echo $position?></h6>
+                        <h6 class="text-uppercase mb-1 text-muted font-weight-bold"><?php echo $position?></h6>
 
                         <!-- Heading -->
-                        <h4 class="mb-0"><?php the_title(); ?></h4>
+                        <h4 class="mb-0 font-weight-bolder"><?php the_title(); ?></h4>
 
                     </div>
 

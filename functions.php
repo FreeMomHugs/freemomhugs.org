@@ -250,3 +250,42 @@ function lc_create_post_type() {
     );
 }
 add_action( 'init', 'lc_create_post_type' );
+
+/**
+ * Custom Post Type Leadership
+ */
+
+// register custom post type to work with
+function lc_create_post_type_leadership() {
+    // set up labels
+    $labels = array (
+        'name' => 'Leadership',
+        'singular_name' => 'Leadership',
+        'add_new' => 'Add New Member',
+        'add_new_item' => 'Add New Member',
+        'edit_item' => 'Edit Person',
+        'new_item' => 'New Member',
+        'all_items' => 'All Leadership',
+        'view_item' => 'View Leadership',
+        'search_items' => 'Search Leadership',
+        'not_found' => 'No Leadership Found',
+        'not_found_in_trash' => 'No Leadership found in Trash',
+        'parent_item_colon' => '',
+        'menu_name' => 'Leadership',
+    );
+    //register post type
+    register_post_type ( 'leadership', array(
+            'labels' => $labels,
+            'has_archive' => false,
+            'public' => true,
+            'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
+            'taxonomies' => array( 'post_tag', 'category' ),
+            'exclude_from_search' => true,
+            'capability_type' => 'post',
+            'menu_icon' => 'dashicons-businesswoman',
+            'rewrite' => array( 'slug' => 'leadership' ),
+            'show_in_rest' => true,
+        )
+    );
+}
+add_action( 'init', 'lc_create_post_type_leadership' );
