@@ -1,4 +1,4 @@
-<div class="p-xs-0 m-xs-0">
+<section class="p-xs-0 m-xs-0">
     <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
 
     <style>
@@ -33,8 +33,8 @@
         }
 
     </style>
-    <div class="container p-0 m-0">
-        <div id="map"></div>
+    <div class="container p-0">
+            <div id="map"></div>
     </div>
     <script>
         var MarkerAnnotation = mapkit.MarkerAnnotation,
@@ -106,4 +106,4 @@
 
 
     </script>
-</div>
+</section>
