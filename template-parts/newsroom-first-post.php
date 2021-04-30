@@ -33,7 +33,7 @@
 
                             <!-- Badge -->
                             <span class="badge badge-pill badge-light badge-float badge-float-inside">
-                    <span class="h6 text-uppercase">
+                    <span class="h6 text-uppercase font-weight-bold">
                         <?php
                             $category = get_the_category();
                             $catName = $category[0]->cat_name;
@@ -83,12 +83,12 @@
 <!--                                </div>-->
 
                                 <!-- Author -->
-                                <h6 class="text-uppercase text-muted mr-2 mb-0">
-                                    <?php echo get_the_author();?>
-                                </h6>
+<!--                                <h6 class="text-uppercase text-muted mr-2 mb-0">-->
+<!--                                    --><?php //echo get_the_author();?>
+<!--                                </h6>-->
 
                                 <!-- Date -->
-                                <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                                <p class="h6 text-uppercase text-muted mr-2 mb-0 font-weight-bold">
                                     <time datetime="<?php echo get_the_date("Y-m-d");?>">
                                         <?php
                                         the_date('M d');
