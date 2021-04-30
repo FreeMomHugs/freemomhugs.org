@@ -29,7 +29,7 @@
 
                         <!-- Text -->
                         <p class="lead mb-7 text-center text-muted">
-                            <?php echo get_the_excerpt(); ?>
+                            <?php //echo get_the_excerpt(); ?>
                         </p>
 
                         <!-- Meta -->

@@ -55,11 +55,10 @@
                 <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
 
                         <!-- Image -->
-                        <a class="card-img-top" href="<?php echo the_permalink();?>">
-                            <img src="<?php echo the_post_thumbnail_url();?>" alt="..." class="card-img-top">
-                        </a>
+                        <div class="card-img-top" href="<?php echo the_permalink();?>">
+                            <img src="<?php echo the_post_thumbnail_url();?>" alt="..." class="card-img-top cover">
+                        </div>
 
-                        <!-- Shape -->
                         <div class="position-relative">
                             <div class="shape shape-fluid-x shape-bottom svg-shim text-white">
                                 <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
@@ -76,9 +75,9 @@
                         ?>
 
                         <!-- Text -->
-                        <p class="mb-0 text-muted">
-                            <?php echo  get_the_excerpt(); ?>
-                        </p>
+<!--                        <p class="mb-0 text-muted">-->
+<!--                            --><?php ////echo  get_the_excerpt(); ?>
+<!--                        </p>-->
 
                     </a>
 
