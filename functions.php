@@ -244,6 +244,7 @@ function lc_create_post_type() {
             'taxonomies' => array( 'post_tag', 'category' ),
             'exclude_from_search' => false,
             'capability_type' => 'post',
+            'menu_icon' => 'dashicons-calendar-alt',
             'rewrite' => array( 'slug' => 'events' ),
         )
     );
