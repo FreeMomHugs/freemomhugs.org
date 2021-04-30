@@ -50,14 +50,14 @@
                             <a class="card-img-top" href="<?php echo the_permalink();?>">
 
                                 <!-- Image -->
-                                <img src="<?php echo the_post_thumbnail_url(); ?>" alt="..." class="card-img-top">
+                                <img src="<?php echo the_post_thumbnail_url(); ?>" alt="..." class="card-img-top cover">
 
                                 <!-- Shape -->
-                                <div class="position-relative">
-                                    <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                                        <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>
-                                    </div>
-                                </div>
+<!--                                <div class="position-relative">-->
+<!--                                    <div class="shape shape-bottom shape-fluid-x svg-shim text-white">-->
+<!--                                        <svg viewBox="0 0 2880 350" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>-->
+<!--                                    </div>-->
+<!--                                </div>-->
 
                             </a>
 
@@ -66,7 +66,7 @@
 
                                 <!-- Heading -->
                                 <?php
-                                the_title( '<h3>', '</h3>' );
+                                the_title( '<h3 class="font-weight-bolder">', '</h3>' );
                                 ?>
 
                                 <!-- Text -->
@@ -88,7 +88,7 @@
 <!--                                </div>-->
 
                                 <!-- Category -->
-                                <h6 class="text-uppercase text-muted mr-2 mb-0">
+                                <h6 class="text-uppercase text-muted mr-2 mb-0 font-weight-bold">
                                     <?php
                                         $category = get_the_category();
                                         $catName = $category[0]->cat_name;
@@ -97,7 +97,7 @@
                                 </h6>
 
                                 <!-- Date -->
-                                <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                                <p class="h6 text-uppercase text-muted mb-0 ml-auto font-weight-bold">
                                     <time datetime="<?php echo get_the_date("Y-m-d");?>">
                                         <?php
                                         the_date('M d');
