@@ -1,3 +1,9 @@
+<?php
+
+
+
+?>
+
 <!-- INFO
    ================================================== -->
 <section class="py-7 py-md-9" id="info">
@@ -20,7 +26,7 @@
                 <!-- Link -->
                 <div class="mb-5 mb-md-0">
                     <a href="#!" class="h4 text-primary">
-                        June 1, 2021
+                        <?php echo $args['eventDate']; ?>
                     </a>
                 </div>
 
@@ -35,7 +41,7 @@
                 <!-- Link -->
                 <div class="mb-5 mb-md-0">
                     <a href="#!" class="h4">
-                        San Francisco
+                        <?php echo $args['locationName'];?>
                     </a>
                 </div>
 
@@ -49,7 +55,7 @@
 
                 <!-- Link -->
                 <a href="#!" class="h4">
-                    Marisa Robertson
+                    <?php echo $args['eventOrganizer'];?>
                 </a>
 
             </div>
