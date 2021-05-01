@@ -238,14 +238,15 @@ function lc_create_post_type() {
     //register post type
     register_post_type ( 'event', array(
             'labels' => $labels,
-            'has_archive' => true,
+            'has_archive' => false,
             'public' => true,
             'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
             'taxonomies' => array( 'post_tag', 'category' ),
-            'exclude_from_search' => false,
+            'exclude_from_search' => true,
             'capability_type' => 'post',
             'menu_icon' => 'dashicons-calendar-alt',
             'rewrite' => array( 'slug' => 'events' ),
+            'show_in_rest' => true,
         )
     );
 }
