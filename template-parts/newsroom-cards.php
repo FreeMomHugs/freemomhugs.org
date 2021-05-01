@@ -27,21 +27,26 @@
         </div> <!-- / .row -->
         <div class="row">
             <?php
+            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
             $args = array(
                 'post_type' => 'post',
                 'offset' => 1,
+                'posts_per_page' => 9,
+                'paged' => $paged,
                 'category_name' => 'newsroom',    //Selecting post category by name
                 'orderby' => 'date',
                 'order'   => 'DESC',
 
             );
+            $args['paged'] = get_query_var( 'paged' )
+                ? get_query_var( 'paged' )
+                : 1;
             $loop = new WP_Query( $args );
             if ( $loop->have_posts() ) :
 
             /* Start the Loop */
 
-            $numposts = 40;
-            while ( $loop->have_posts() && $numposts > 0 ) : $loop->the_post();
+            while ( $loop->have_posts() ) : $loop->the_post();
 
             /*
              * Include the Post-Format-specific template for the content.
@@ -117,17 +122,38 @@
 
             </div>
                 <?php
-                        //get_template_part( 'template-parts/content', get_post_format() );
+                //get_template_part( 'template-parts/content', get_post_format() );
 
-                        $numposts = $numposts-1;
-                    endwhile;
 
-                    else :
+            endwhile;
 
-                        get_template_part( 'template-parts/content', 'none' );
+            else :
 
-                endif; ?>
+                get_template_part( 'template-parts/content', 'none' );
+
+            endif; ?>
+
+
         </div> <!-- / .row -->
     </div> <!-- / .container -->
+    <div class="col-12 col-md pb-6 pt-4 text-center">
+        <?php
+        echo paginate_links( array(
+            'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
+            'total'        => $loop->max_num_pages,
+            'current'      => max( 1, get_query_var( 'paged' ) ),
+            'format'       => '?paged=%#%',
+            'show_all'     => false,
+            'type'         => 'plain',
+            'end_size'     => 2,
+            'mid_size'     => 1,
+            'prev_next'    => true,
+            'prev_text'    => sprintf( '<i></i> %1$s', __( 'Newer Posts', 'text-domain' ) ),
+            'next_text'    => sprintf( '%1$s <i></i>', __( 'Older Posts', 'text-domain' ) ),
+            'add_args'     => false,
+            'add_fragment' => '',
+        ) );
+        ?>
+    </div>
 
 </section>
