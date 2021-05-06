@@ -19,7 +19,7 @@ msgid "_s"
 msgstr ""
 
 #. Theme URI of the theme
-msgid "https://underscores.me/"
+msgid "https://freemomhugs.org/"
 msgstr ""
 
 #. Description of the theme
@@ -27,7 +27,7 @@ msgid "Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, 
 msgstr ""
 
 #. Author of the theme
-msgid "Automattic"
+msgid "Preston Kemp"
 msgstr ""
 
 #. Author URI of the theme
