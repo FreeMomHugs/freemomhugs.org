@@ -81,6 +81,18 @@
         //     mapkit.removeEventListener("configuration-change", configurationChanged);
         //     setCity("sanfrancisco");
         // });
+        <?php
+        $mapLat = get_post_meta( get_the_ID(), 'Latitude', true);
+        $mapLong = get_post_meta( get_the_ID(), 'Longitute', true);
+
+
+
+
+        ?>
+        var Location = new mapkit.CoordinateRegion(
+            new mapkit.Coordinate(<?php echo $mapLat;?>, <?php echo $mapLong;?>),
+            new mapkit.CoordinateSpan(0.10, 0.11)
+        )
         var Cupertino = new mapkit.CoordinateRegion(
             new mapkit.Coordinate(37.3316850890998, -122.030067374026),
             new mapkit.CoordinateSpan(0.167647972, 0.354985255)

@@ -35,7 +35,7 @@
                         </a>
                     </li>
                     <li class="list-inline-item list-social-item mr-3">
-                        <a href="https://www.facebook.com/freemomhugsok" class="text-decoration-none">
+                        <a href="https://www.facebook.com/freemomhugsinc" class="text-decoration-none">
                             <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
                         </a>
                     </li>
