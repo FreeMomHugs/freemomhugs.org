@@ -14,7 +14,7 @@
 
 <!-- FOOTER
 ================================================== -->
-<footer class="py-8 py-md-11 bg-dark">
+<footer class="py-4 py-md-4 bg-dark">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-4 col-lg-3">
@@ -193,6 +193,14 @@
             </div>
  */ ?>
         </div> <!-- / .row -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <!-- 501c3 text -->
+                <p class="text-gray-700 mt-2 mb-0 text-center">
+                    Free Mom Hugs, Inc. is a 501(c)(3) organization. Gifts are deductible to the full extent allowable under IRS regulations.
+                </p>
+            </div>
+        </div>
     </div> <!-- / .container -->
 </footer>
 </div><!-- #page -->
