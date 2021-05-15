@@ -35,7 +35,11 @@
     </script>
     <script type='text/javascript' src='https://widget.freshworks.com/widgets/43000001812.js' async defer></script>
 
-
+    <?php
+    if (true) {
+        get_template_part( 'template-parts/opengraph');
+    }
+    ?>
 
 </head>
 
