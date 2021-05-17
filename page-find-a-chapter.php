@@ -87,7 +87,7 @@ get_header();
                             <option value="Vermont">Vermont</option>
                             <option value="Virginia">Virginia</option>
                             <option value="Washington">Washington</option>
-                            <option value="West Virgina">West Virginia</option>
+                            <option value="west-virginia">West Virginia</option>
                             <option value="Wisconsin">Wisconsin</option>
                         </select>
                     </div>
