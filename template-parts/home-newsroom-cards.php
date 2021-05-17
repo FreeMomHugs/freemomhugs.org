@@ -50,7 +50,11 @@
                             <a class="card-img-top" href="<?php echo the_permalink();?>">
 
                                 <!-- Image -->
-                                <img src="<?php echo the_post_thumbnail_url(); ?>" alt="..." class="card-img-top cover">
+                                <?php
+                                    $image_arr = wp_get_attachment_image_src(get_post_thumbnail_id($post_array->ID), 'medium');
+                                    $image_url = $image_arr[0]; // $image_url is your URL.
+                                ?>
+                                <img src="<?php echo $image_url; ?>" alt="..." class="card-img-top cover">
 
                                 <!-- Shape -->
 <!--                                <div class="position-relative">-->
