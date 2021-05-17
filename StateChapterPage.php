@@ -22,8 +22,7 @@ $facebookURL = get_post_meta( get_the_ID(), 'facebook_url', true);
 
                         <!-- Text -->
                         <p class="lead mb-8 text-white-75">
-                            Keep up to date with what we're working on! Landkit is an ever evolving theme with regular
-                            updates.
+                            
                         </p>
 
                     </div>
