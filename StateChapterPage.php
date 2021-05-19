@@ -22,7 +22,7 @@ $facebookURL = get_post_meta( get_the_ID(), 'facebook_url', true);
 
                         <!-- Text -->
                         <p class="lead mb-8 text-white-75">
-                            
+
                         </p>
 
                     </div>

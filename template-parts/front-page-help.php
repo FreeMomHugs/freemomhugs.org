@@ -45,6 +45,7 @@
             <div class="col-12 col-md-6 col-lg-4">
 
                 <!-- Card -->
+                <a href="/resources/" class="text-decoration-none">
                 <div class="card card-border border-success shadow-lg mb-6 mb-md-8 lift lift-lg">
                     <div class="card-body text-center">
 
@@ -72,7 +73,7 @@
 
                     </div>
                 </div>
-
+                </a>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
 
