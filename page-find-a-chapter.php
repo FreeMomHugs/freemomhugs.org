@@ -81,6 +81,7 @@ get_header();
                             <option value="Pennsylvania">Pennsylvania</option>
                             <option value="Rhode Island">Rhode Island</option>
                             <option value="South Carolina">South Carolina</option>
+                            <option value="south-dakota">South Dakota</option>
                             <option value="Tennessee">Tennessee</option>
                             <option value="Texas">Texas</option>
                             <option value="Utah">Utah</option>
