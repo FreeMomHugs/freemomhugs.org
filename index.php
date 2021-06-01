@@ -62,7 +62,7 @@ get_header();
 
                         <!-- Heading -->
                         <h2 class="display-3 font-weight-bold text-white mb-3">
-                            It's Pride Season.
+                            It's <span style="background: linear-gradient(to right, #fdf368, #fdad4b, #fb5173); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Pride</span> Season.
                         </h2>
                         <p class="text-muted lead mb-0 pb-0">
                             <span class="text-white">Official 2021 Pride Shirt</span>
