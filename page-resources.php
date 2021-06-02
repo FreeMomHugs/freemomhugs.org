@@ -30,7 +30,6 @@ get_header();
 
                         <!-- Text -->
                         <p class="lead mb-0 text-white-75">
-                            Latest news and information from the Free Mom Hugs team
                         </p>
 
                     </div>
@@ -46,8 +45,7 @@ get_header();
             </div>
         </div>
         <?php
-        get_template_part( 'template-parts/newsroom-first-post', 'page' );
-        get_template_part( 'template-parts/newsroom-cards', 'page' );
+        get_template_part( 'template-parts/resource-cards', 'page' );
         ?>
 
 

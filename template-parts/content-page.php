@@ -10,24 +10,30 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+    <section class="pt-2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+<!--                    <header class="entry-header">-->
+<!--                        --><?php //the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+<!--                    </header>
+-->
+                    <div class="entry-content">
+                        <?php
+                        the_content();
 
-	<?php wp_freemomhugs_post_thumbnail(); ?>
-
-	<div class="entry-content">
-		<?php
-		the_content();
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wp-freemomhugs' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
+                        wp_link_pages(
+                            array(
+                                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wp-freemomhugs' ),
+                                'after'  => '</div>',
+                            )
+                        );
+                        ?>
+                    </div><!-- .entry-content -->
+                </div>
+            </div>
+        </div>
+    </section>
 
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
