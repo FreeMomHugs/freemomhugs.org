@@ -24,37 +24,14 @@ get_header();
     <script type='text/javascript' src='https://widget.freshworks.com/widgets/43000001812.js' async defer></script>
 
 	<main id="primary" class="site-main">
-        <!-- WELCOME
-        ================================================== -->
-        <section class="bg-cover overlay overlay-black overlay-60" style="background-image: url(https://static.freemomhugs.org/wp-content/uploads/2020/10/margaux-bellott-r5tmUSupJwA-unsplash-scaled.jpg)">
-            <div class="container d-flex flex-column">
-                <div class="row align-items-center justify-content-center min-vh-100 py-8 py-md-11">
-                    <div class="col-12 col-md-8 col-lg-9 mt-auto text-center">
-
-                        <!-- Heading -->
-                        <h1 class="display-1 mb-0 font-weight-bold text-white">
-                            Building a better world, <br> <span class="font-weight-bolder">one hug at a time.</span>
-                        </h1>
-
-                    </div>
-                    <div class="col-12 mt-auto text-center">
-
-                        <!-- Button -->
-                        <a class="btn btn-white btn-rounded-circle shadow text-decoration-none" data-toggle="smooth-scroll" data-offset="0" href="#sectionTwo">
-                            <i class="fe fe-arrow-down"></i>
-                        </a>
-
-                    </div>
-                </div> <!-- / .row -->
-            </div> <!-- / .container -->
-        </section>
 
         <?php
         $date_now = date("Y-m-d"); // this format is string comparable
-        if ($date_now < '2021-06-12') {
-            get_template_part( 'template-parts/pride-season');
+        if ($date_now < '2022-06-12') {
+            get_template_part( 'template-parts/pray-away-section');
         }
         ?>
+
 
 
         <?php
