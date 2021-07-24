@@ -10,12 +10,12 @@
                 <!-- Heading -->
                 <div class="row">
                     <!-- Image for awards PA -->
-                    <div class="col-12 col-md-6 mx-auto text-center pl-6 pr-6 pb-8">
+                    <div class="col-12 col-md-8 mx-auto text-center pl-6 pr-6 pb-8">
                         <img class="mx-auto d-block" src="https://static.freemomhugs.org/wp-content/uploads/2021/07/PA-Netflix-announcement-no-title.png" alt="...">
                     </div>
                 </div>
                 <h1 class="display-1 font-weight-bold text-white">
-                    Pray Away</span>
+                    Pray Away
                 </h1>
 
                 <p class="text-muted lead mb-4 pb-8">
@@ -40,7 +40,7 @@
                         </p>
 
                         <!-- Text -->
-                        <a class="btn btn-danger btn-pill text-white disabled" href="">
+                        <a class="btn btn-danger btn-pill text-white disabled mb-6 mb-md-0" href="">
                             Coming Soon
                         </a>
                     </div>
@@ -51,7 +51,7 @@
                         <h3 class="font-weight-bold text-white mb-3">
                             Watch the Film
                         </h3>
-                        <p class="text-muted mb-2 pb-0">
+                        <p class="text-muted font-weight-bold mb-2 pb-0">
                             <span class="text-white">Premieres August 3 on Netflix</span>
                         </p>
 
