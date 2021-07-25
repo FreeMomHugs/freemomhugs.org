@@ -52,8 +52,12 @@
                         ?>
 
                         <!-- Text -->
-                        <p class="lead text-center text-muted">
-                            <?php //echo get_the_excerpt(); ?>
+                        <p class="text-left text-black-80">
+                            <?php
+                            if (has_excerpt()) {
+                                echo get_the_excerpt();
+                            }
+                             ?>
                         </p>
 
                         <!-- Meta -->
