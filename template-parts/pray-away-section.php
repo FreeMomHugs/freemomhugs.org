@@ -40,8 +40,8 @@
                         </p>
 
                         <!-- Text -->
-                        <a class="btn btn-danger btn-pill text-white disabled mb-6 mb-md-0" href="">
-                            Coming Soon
+                        <a class="btn btn-danger btn-pill text-white mb-6 mb-md-0" href="https://www.youtube.com/watch?v=XXK9MnEkrcA">
+                            Watch Live
                         </a>
                     </div>
 
@@ -63,6 +63,15 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- Premiere Video -->
+            <div class="col-12 col-md-6 mb-8">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/XXK9MnEkrcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
             <!-- Trailer -->
             <div class="col-12 col-md-6 mb-8">
                 <div class="embed-responsive embed-responsive-16by9">
