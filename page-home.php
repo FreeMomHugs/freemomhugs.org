@@ -30,7 +30,11 @@ get_header();
         if ($date_now < '2022-06-12') {
             get_template_part( 'template-parts/pray-away-section');
         }
+        if ($date_now > '2021-08-07') {
+            get_template_part( 'template-parts/pride-season');
+        }
         ?>
+
 
 
 
