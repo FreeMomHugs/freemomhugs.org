@@ -68,6 +68,7 @@ get_header();
                             <option value="Minnesota">Minnesota</option>
                             <option value="Mississippi">Mississippi</option>
                             <option value="Missouri">Missouri</option>
+                            <option value="Montana">Montana</option>
                             <option value="Nebraska">Nebraska</option>
                             <option value="Nevada">Nevada</option>
                             <option value="New Hampshire">New Hampshire</option>
@@ -75,6 +76,7 @@ get_header();
                             <option value="New Mexico">New Mexico</option>
                             <option value="New York">New York</option>
                             <option value="North Carolina">North Carolina</option>
+                            <option value="North Dakota">North Dakota</option>
                             <option value="Ohio">Ohio</option>
                             <option value="Oklahoma">Oklahoma</option>
                             <option value="Oregon">Oregon</option>
@@ -90,6 +92,7 @@ get_header();
                             <option value="Washington">Washington</option>
                             <option value="west-virginia">West Virginia</option>
                             <option value="Wisconsin">Wisconsin</option>
+                            <option value="Wyoming">Wyoming</option>
                         </select>
                     </div>
                 </form>

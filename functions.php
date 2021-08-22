@@ -290,3 +290,42 @@ function lc_create_post_type_leadership() {
     );
 }
 add_action( 'init', 'lc_create_post_type_leadership' );
+
+/**
+ * Custom Post Type Leadership
+ */
+
+// register custom post type to work with
+function lc_create_post_type_books() {
+    // set up labels
+    $labels = array (
+        'name' => 'Book',
+        'singular_name' => 'Book',
+        'add_new' => 'Add New Book',
+        'add_new_item' => 'Add New Book',
+        'edit_item' => 'Edit Book',
+        'new_item' => 'New Book',
+        'all_items' => 'All Books',
+        'view_item' => 'View Books',
+        'search_items' => 'Search Books',
+        'not_found' => 'No Books Found',
+        'not_found_in_trash' => 'No Books found in Trash',
+        'parent_item_colon' => '',
+        'menu_name' => 'Books',
+    );
+    //register post type
+    register_post_type ( 'book', array(
+            'labels' => $labels,
+            'has_archive' => false,
+            'public' => true,
+            'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
+            'taxonomies' => array( 'post_tag', 'category' ),
+            'exclude_from_search' => true,
+            'capability_type' => 'post',
+            'menu_icon' => 'dashicons-book',
+            'rewrite' => array( 'slug' => 'books' ),
+            'show_in_rest' => true,
+        )
+    );
+}
+add_action( 'init', 'lc_create_post_type_books' );
