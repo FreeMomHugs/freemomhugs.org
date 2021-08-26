@@ -41,19 +41,18 @@
 
                         ?>
                         <!-- TODO fix this for books by multiple authors -->
-                        <h2 class="display-6" style="font-weight: 500;">by <?php echo $author[0]->name ?></h2>
-                        <p class="display-5"><span class="font-weight-bold">ISBN-13:</span> <?php echo $isbn13[0]->name ?></p>
-                        <p class="display-5"><span class="font-weight-bold">ISBN-10:</span> <?php echo $isbn10[0]->name ?></p>
+                        <h2 style="font-weight: 600; font-size: 1.75em;">by <?php echo $author[0]->name ?></h2>
+
 
                         <!-- Text -->
                         <p class="text-left text-black-80">
                             <?php
-                            if (has_excerpt()) {
-                                echo get_the_excerpt();
-                            }
+                                echo the_content();
                              ?>
                         </p>
 
+                        <p class="display-5 mb-0"><span class="font-weight-bold">ISBN-13:</span> <?php echo $isbn13[0]->name ?></p>
+                        <p class="display-5"><span class="font-weight-bold">ISBN-10:</span> <?php echo $isbn10[0]->name ?></p>
                     </div>
                 </div> <!-- / .row -->
 
@@ -73,9 +72,6 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-9 col-xl-8">
                     <!-- Text -->
-                    <?php
-                    the_content();
-                    ?>
 
                 </div>
             </div> <!-- / .row -->

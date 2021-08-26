@@ -352,6 +352,11 @@ h6, .h6 {
   font-weight: 400;
   line-height: 1; }
 
+.display-5 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1; }
+
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -5483,6 +5488,15 @@ button.bg-light:focus {
 .bg-dark {
   background-color: #1B2A4E !important; }
 
+.bg-bright-blue {
+  background-color: #3c76bb !important; }
+
+.bg-bright-teal {
+  background-color: #40a6c2 !important; }
+
+.bg-bright-green {
+  background-color: #5cc9a8 !important; }
+
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
@@ -10466,6 +10480,9 @@ a.text-light:hover, a.text-light:focus {
 .text-dark {
   color: #1B2A4E !important; }
 
+.text-bright-blue {
+  color: #3c76bb !important; }
+
 a.text-dark:hover, a.text-dark:focus {
   color: #070b15 !important; }
 
@@ -11514,6 +11531,14 @@ a.card, a.card-body, a.card-footer, a.card-meta {
   right: 1.5rem;
   z-index: 1000; }
 
+.resources-card {
+  height: 550px;
+  padding-top: 40px;
+  margin: 10px 0 10px 10px;
+  text-align: center;
+
+}
+
 .navbar {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -11859,7 +11884,7 @@ h6, .h6 {
   h6.text-uppercase, .h6.text-uppercase {
     letter-spacing: .08em; }
 
-.display-1, .display-2, .display-3, .display-4 {
+.display-1, .display-2, .display-3, .display-4, .display-5 {
   letter-spacing: -0.02em; }
 
 .display-1 {
@@ -11885,6 +11910,12 @@ h6, .h6 {
   @media (max-width: 991.98px) {
     .display-4 {
       font-size: 2rem; } }
+
+.display-5 {
+  line-height: 1.2; }
+@media (max-width: 991.98px) {
+  .display-4 {
+    font-size: 2rem; } }
 
 @media (max-width: 991.98px) {
   .lead {

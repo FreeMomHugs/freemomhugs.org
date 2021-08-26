@@ -22,11 +22,20 @@
                 <!-- Brand -->
                 <img src="https://static.freemomhugs.org/wp-content/uploads/2020/10/fmh-original-white.png" alt="..." class="footer-brand img-fluid mb-2">
 
-                <!-- Text -->
+                <!-- Address -->
                 <p class="text-gray-700 mb-2">
-                    One hug at a time.
+                    PO Box 12731 <br>
+                    Oklahoma City, OK 73157-2731
                 </p>
 
+                <!-- Text -->
+                <p class="text-gray-700 mb-0">
+                    One hug at a time.
+                </p>
+                <!-- EIN -->
+                <p class="text-gray-700 mb-2">
+                    EIN: 83-1530294
+                </p>
 
 
                 <!-- Social -->
@@ -50,8 +59,8 @@
 
             </div>
 
-            <div class="col-6 col-md-4 pr-2 pt-0 mt-0" style=display:flex;justify-content:center;align-items:center;>
-                <a href="https://www.guidestar.org/profile/83-1530294" target="_blank"><img src="https://widgets.guidestar.org/gximage2?o=9748468&l=v4" style="max-height:4rem;"/></a>
+            <div class="col-6 col-md-4 pr-2 pt-0 mt-0 pt-0" style="display:flex;justify-content:flex-end;align-items:center;">
+                <a href="https://www.guidestar.org/profile/83-1530294" target="_blank"><img src="https://widgets.guidestar.org/gximage2?o=9748468&l=v4" style="max-height:5rem;"/></a>
             </div>
             <?php /*
             <div class="col-6 col-md-4 col-lg-2">

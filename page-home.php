@@ -27,9 +27,8 @@ get_header();
 
         <?php
         $date_now = date("Y-m-d"); // this format is string comparable
-        if ($date_now < '2022-06-12') {
-            get_template_part( 'template-parts/pray-away-section');
-        }
+        get_template_part( 'template-parts/one-hug-at-a-time-header');
+
         if ($date_now > '2021-08-04') {
             get_template_part( 'template-parts/pride-season');
         }
