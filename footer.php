@@ -17,7 +17,7 @@
 <footer class="py-4 py-md-4 bg-dark">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-4 col-lg-3">
+            <div class="col-6 col-md-8">
 
                 <!-- Brand -->
                 <img src="https://static.freemomhugs.org/wp-content/uploads/2020/10/fmh-original-white.png" alt="..." class="footer-brand img-fluid mb-2">
@@ -26,6 +26,8 @@
                 <p class="text-gray-700 mb-2">
                     One hug at a time.
                 </p>
+
+
 
                 <!-- Social -->
                 <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
@@ -46,6 +48,10 @@
                     </li>
                 </ul>
 
+            </div>
+
+            <div class="col-6 col-md-4 pr-2 pt-0 mt-0" style=display:flex;justify-content:center;align-items:center;>
+                <a href="https://www.guidestar.org/profile/83-1530294" target="_blank"><img src="https://widgets.guidestar.org/gximage2?o=9748468&l=v4" style="max-height:4rem;"/></a>
             </div>
             <?php /*
             <div class="col-6 col-md-4 col-lg-2">
