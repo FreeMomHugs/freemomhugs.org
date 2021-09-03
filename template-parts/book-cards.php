@@ -4,20 +4,24 @@
     <div class="container">
         <div class="row">
             <?php
-            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-            $args = array(
-                'post_type' => 'book',
-                'offset' => 0,
-                'posts_per_page' => 9,
-                'paged' => $paged,
-//                'category_name' => 'newsroom',    //Selecting post category by name
-                'orderby' => 'date',
-                'order'   => 'DESC',
+//            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+//            $args = array(
+//                'post_type' => 'book',
+//                'offset' => 0,
+//                'posts_per_page' => 9,
+//                'paged' => $paged,
+////                'category_name' => 'newsroom',    //Selecting post category by name
+//
+//            );
 
+            $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+            $args = array(
+	            'post_type'=>'book', // Your post type name
+	            'posts_per_page' => 9,
+	            'paged' => $paged,
             );
-            $args['paged'] = get_query_var( 'paged' )
-                ? get_query_var( 'paged' )
-                : 1;
+            $args['paged'] = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
             $loop = new WP_Query( $args );
             if ( $loop->have_posts() ) :
 
