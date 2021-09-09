@@ -3,14 +3,9 @@
 <section class="pt-7 pt-md-10">
     <div class="container">
         <div class="row align-items-center mb-5">
-         <div class="row">
             <?php
             $args = array(
-                'post_type' => 'post',
-                'offset' => 1,
-                'category_name' => 'resources',    //Selecting post category by name
-                'orderby' => 'date',
-                'order'   => 'DESC',
+                'post_type' => 'organization'
 
             );
             $loop = new WP_Query( $args );
@@ -50,7 +45,7 @@
 
                         <!-- Heading -->
                         <?php
-                        the_title( '<h3>', '</h3>' );
+                        the_title( '<h3 class="font-weight-bold">', '</h3>' );
                         ?>
 
                         <!-- Text -->
@@ -62,15 +57,6 @@
 
                     <!-- Meta -->
                     <a class="card-meta mt-auto" href="#!">
-
-                        <!-- Divider -->
-                        <hr class="card-meta-divider">
-
-                        <!-- Avatar -->
-<!--                        <div class="avatar avatar-sm mr-2">-->
-<!--                            <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">-->
-<!--                        </div>-->
-
                         <!-- Category -->
                         <h6 class="text-uppercase text-muted mr-2 mb-0">
                             <?php
@@ -79,16 +65,6 @@
                             echo $catName;
                             ?>
                         </h6>
-
-                        <!-- Date -->
-                        <p class="h6 text-uppercase text-muted mb-0 ml-auto">
-                            <time datetime="<?php echo get_the_date("Y-m-d");?>">
-                                <?php
-                                the_date('M d');
-                                ?>
-                            </time>
-                        </p>
-
                     </a>
 
                 </div>
