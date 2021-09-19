@@ -14,9 +14,8 @@
                     Empowering the world to celebrate the
                     LGBTQIA+ community through visibility,
                     education, and conversation.
-                        <br><span class="text-primary font-weight-bold">
-                            And yes, we still give hugs!
-                        </span>
+                        <br>
+                    <span class="text-primary font-weight-bold" style="background: linear-gradient(to right, #70d6ff, #ff70a6, #ff9770); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">And yes, we still give hugs!</span>
                 </h3>
 
 

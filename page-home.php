@@ -30,6 +30,10 @@ get_header();
         get_template_part( 'template-parts/one-hug-at-a-time-header');
 
         if ($date_now > '2021-08-04' && $date_now < '2021-10-01' ) {
+	        get_template_part( 'template-parts/care-package');
+        }
+
+        if ($date_now > '2021-08-04' && $date_now < '2021-10-15' ) {
             get_template_part( 'template-parts/pride-season');
         }
         ?>
@@ -46,7 +50,7 @@ get_header();
                 'button-text' => 'Learn More',
                 'background-url' => '',
             );
-            get_template_part( 'template-parts/paralax-section', 'none' , $paralax1);
+            get_template_part( 'template-parts/mission-statement', 'none' , $paralax1);
             get_template_part( 'template-parts/front-page-help', 'none');
         ?>
 
