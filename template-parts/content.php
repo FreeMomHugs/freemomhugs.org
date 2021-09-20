@@ -59,6 +59,8 @@
                             }
                              ?>
                         </p>
+                    </div>
+                </div>
 
                         <!-- Meta -->
                         <div class="row align-items-center pb-5">
@@ -85,26 +87,17 @@
 <!--                                </div>-->
 
                             </div>
-                            <div class="col ml-n5">
-
-                                <!-- Name -->
-<!--                                <h6 class="text-uppercase mb-0">-->
-<!--                                    --><?php //the_author(); ?>
-<!--                                </h6>-->
-
-
-
-                            </div>
-                            <div class="col-auto">
-
-
-                            </div>
                         </div>
 
-                    </div>
-                </div> <!-- / .row -->
+
                 <!-- Image -->
-                <img src="<?php echo get_the_post_thumbnail_url(); ?>"/>
+                <div class="row">
+                    <div class="col-12">
+                        <img class="rounded mx-auto d-block" src="<?php echo get_the_post_thumbnail_url(); ?>"/>
+                    </div>
+
+                </div>
+
 
             </div> <!-- / .container -->
         </section>
