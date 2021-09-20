@@ -13,7 +13,7 @@
 	<header class="entry-header">
         <!-- HEADER
         ================================================== -->
-        <section class="pt-2 pt-md-11">
+        <section class="pt-2 pt-md-4">
             <div class="container">
                 <div class="row mb-0">
                     <div class="col-12 col-md-10 col-lg-9 col-xl-8">

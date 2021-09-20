@@ -13,7 +13,9 @@ get_header();
 	<main id="primary" class="site-main">
 
 
+
 		<?php
+		get_template_part( 'template-parts/newsroom-breadcrumb', 'none');
 		while ( have_posts() ) :
 			the_post();
 
