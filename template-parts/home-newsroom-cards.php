@@ -1,18 +1,18 @@
 <!-- ARTICLES
 ================================================== -->
-<section class="pt-7 pt-md-10">
+<section class="py-7 py-md-10 bg-black">
     <div class="container">
         <div class="row">
             <div class="col-12">
 
                 <!-- Heading -->
-                <h3 class="mb-0">
+                <h2 class="display-1 font-weight-bold text-center text-white mb-0">
                     Latest News
-                </h3>
+                </h2>
 
                 <!-- Text -->
-                <p class="mb-5 text-muted">
-                    Here’s what we've been up to!
+                <p class="mb-5 text-center text-white-70">
+                    The latest from the Free Mom Hugs team.
                 </p>
 
             </div>

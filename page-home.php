@@ -51,8 +51,12 @@ get_header();
                 'background-url' => '',
             );
             get_template_part( 'template-parts/mission-statement', 'none' , $paralax1);
-            get_template_part( 'template-parts/front-page-help', 'none');
+//            get_template_part( 'template-parts/front-page-help', 'none');
         ?>
+
+		<?php
+		get_template_part( 'template-parts/home-newsroom-cards', 'none' );
+		?>
 
         <!-- TOGETHER
         ================================================== -->
@@ -90,10 +94,6 @@ get_header();
                 </div>
             </div>
         </section>
-        <?php
-            get_template_part( 'template-parts/home-newsroom-cards', 'none' );
-		?>
-
 
 
 	</main><!-- #main -->
