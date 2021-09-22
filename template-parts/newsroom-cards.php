@@ -27,10 +27,14 @@
         </div> <!-- / .row -->
         <div class="row">
             <?php
+            $most_recent_post = wp_get_recent_posts(array(
+	            'numberposts' => 2, // Number of recent posts thumbnails to display
+	            'post_status' => 'publish' // Show only the published posts
+            ));
             $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
             $args = array(
+	            'post__not_in' => array($most_recent_post[0]["ID"]),
                 'post_type' => 'post',
-                'offset' => 1,
                 'posts_per_page' => 9,
                 'paged' => $paged,
                 'category_name' => 'newsroom',    //Selecting post category by name
@@ -38,9 +42,6 @@
                 'order'   => 'DESC',
 
             );
-            $args['paged'] = get_query_var( 'paged' )
-                ? get_query_var( 'paged' )
-                : 1;
 
             $loop = new WP_Query( $args );
 
