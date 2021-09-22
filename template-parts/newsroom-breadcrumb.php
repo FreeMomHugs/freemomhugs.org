@@ -5,8 +5,8 @@
             <a class=" navbar-brand text-dark font-size-lg" href="/newsroom" style="font-weight: 600;">
                 Newsroom
             </a>
-            <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#newsroomNavbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#newsroomNavbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fe fe-search"></span>
             </button>
             <div class="collapse navbar-collapse" id="newsroomNavbarCollapse" style="position:relative;left: 0; top: 1rem;">
                 <form class="form-inline my-4 my-md-0" action="/" method="GET">
