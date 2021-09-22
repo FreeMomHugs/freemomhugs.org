@@ -19,17 +19,19 @@ $search = new WP_Query( $search_query );
 <nav class="bg-gray-200">
 	<div class="container">
 		<div class="row">
-			<div class="col-12">
+			<div class="col-12 ml-4 ml-lg-0 pl-0">
 
 				<!-- Breadcrumb -->
 				<ol class="breadcrumb breadcrumb-scroll">
 					<li class="breadcrumb-item">
-						<a href="blog.html" class="text-gray-700">
-							Blog
+						<a href="blog.html" class="text-dark font-size-lg" style="font-weight: 600;">
+							Newsroom
 						</a>
 					</li>
-					<li class="breadcrumb-item active" aria-current="page">
-						Search Results
+					<li class="breadcrumb-item active text-dark font-size-lg" aria-current="page" style="font-weight: 600;">
+                        <a href="" class="text-dark font-size-lg" style="font-weight: 600;">
+                            Search Results
+                        </a>
 					</li>
 				</ol>
 

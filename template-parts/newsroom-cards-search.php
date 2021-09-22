@@ -4,12 +4,19 @@
     <div class="container">
         <div class="row">
             <?php
+//            wp_parse_str( $query_string, $search_query );
+            $args = array(
+	            'post_type' => 'post',
+	            'category_name' => 'newsroom',    //Selecting post category by name
+	            's' => get_search_query(),
+            );
+            $search = new WP_Query( $args );
 
-            if ( $wp_query->have_posts() ) :
+            if ( $search->have_posts() ) :
 
             /* Start the Loop */
 
-            while ( $wp_query->have_posts() ) : $wp_query->the_post();
+            while ( $search->have_posts() ) : $search->the_post();
 
             /*
              * Include the Post-Format-specific template for the content.
