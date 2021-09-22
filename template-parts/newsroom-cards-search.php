@@ -1,33 +1,84 @@
+            <?php
+    //            wp_parse_str( $query_string, $search_query );
+                $args = array(
+                    'post_type' => 'post',
+                    'posts_per_page' => 9,
+                    'category_name' => 'newsroom',    //Selecting post category by name
+                    's' => get_search_query(),
+                );
+                $args['paged'] = get_query_var( 'paged' )
+                    ? get_query_var( 'paged' )
+                    : 1;
+
+                $search = new WP_Query( $args );
+            ?>
+<!-- SEARCH
+================================================== -->
+<section class="py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <!-- Form -->
+                <form class="rounded shadow" action="/" method="GET">
+                    <div class="input-group input-group-lg">
+
+                        <!-- Prepend -->
+                        <div class="input-group-prepend">
+                  <span class="input-group-text border-0 pr-1">
+                    <i class="fe fe-search"></i>
+                  </span>
+                        </div>
+
+                        <!-- Input -->
+                        <input name="s" type="text" class="form-control border-0 px-1" aria-label="Search our blog..." placeholder="Search our blog..." value="<?php echo get_search_query(); ?>">
+
+                        <!-- Append -->
+                        <div class="input-group-append">
+                  <span class="input-group-text border-0 py-0 pl-1 pr-3">
+
+                    <!-- Text -->
+                    <span class="h6 text-uppercase text-muted d-none d-md-block mb-0 mr-5">
+                      <?php
+                      $total_results = $search->found_posts;
+                      printf( esc_html__( '%d Results', 'wp-freemomhugs' ), $total_results);
+                      ?>
+                    </span>
+
+                      <!-- Button -->
+                    <button type="submit" class="btn btn-sm btn-primary">
+                      Search
+                    </button>
+
+                  </span>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+        </div> <!-- / .row -->
+    </div>
+</section>
+
 <!-- ARTICLES
 ================================================== -->
 <section class="pt-7 pt-md-10">
     <div class="container">
         <div class="row">
             <?php
-//            wp_parse_str( $query_string, $search_query );
-            $args = array(
-	            'post_type' => 'post',
-	            'posts_per_page' => 9,
-	            'category_name' => 'newsroom',    //Selecting post category by name
-	            's' => get_search_query(),
-            );
-            $args['paged'] = get_query_var( 'paged' )
-	            ? get_query_var( 'paged' )
-	            : 1;
 
-            $search = new WP_Query( $args );
+                if ( $search->have_posts() ) :
 
-            if ( $search->have_posts() ) :
+                /* Start the Loop */
 
-            /* Start the Loop */
+                while ( $search->have_posts() ) : $search->the_post();
 
-            while ( $search->have_posts() ) : $search->the_post();
-
-            /*
-             * Include the Post-Format-specific template for the content.
-             * If you want to override this in a child theme, then include a file
-             * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-             */
+                /*
+                 * Include the Post-Format-specific template for the content.
+                 * If you want to override this in a child theme, then include a file
+                 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+                 */
             ?>
             <div class="col-12 col-md-6 col-lg-4 d-flex pb-4">
 

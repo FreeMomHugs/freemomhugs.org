@@ -40,54 +40,7 @@ $search = new WP_Query( $search_query );
 	</div> <!-- / .container -->
 </nav>
 
-<!-- SEARCH
-================================================== -->
-<section class="py-6">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
 
-				<!-- Form -->
-				<form class="rounded shadow" action="/" method="GET">
-					<div class="input-group input-group-lg">
-
-						<!-- Prepend -->
-						<div class="input-group-prepend">
-                  <span class="input-group-text border-0 pr-1">
-                    <i class="fe fe-search"></i>
-                  </span>
-						</div>
-
-						<!-- Input -->
-						<input name="s" type="text" class="form-control border-0 px-1" aria-label="Search our blog..." placeholder="Search our blog..." value="<?php echo get_search_query(); ?>">
-
-						<!-- Append -->
-						<div class="input-group-append">
-                  <span class="input-group-text border-0 py-0 pl-1 pr-3">
-
-                    <!-- Text -->
-                    <span class="h6 text-uppercase text-muted d-none d-md-block mb-0 mr-5">
-                      <?php
-                          $total_results = $wp_query->found_posts;
-                          printf( esc_html__( '%d Results', 'wp-freemomhugs' ), $total_results);
-                      ?>
-                    </span>
-
-	                  <!-- Button -->
-                    <button type="submit" class="btn btn-sm btn-primary">
-                      Search
-                    </button>
-
-                  </span>
-						</div>
-
-					</div>
-				</form>
-
-			</div>
-		</div> <!-- / .row -->
-	</div>
-</section>
 
 <!-- ARTICLES
 ================================================== -->
