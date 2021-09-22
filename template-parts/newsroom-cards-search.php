@@ -7,9 +7,14 @@
 //            wp_parse_str( $query_string, $search_query );
             $args = array(
 	            'post_type' => 'post',
+	            'posts_per_page' => 9,
 	            'category_name' => 'newsroom',    //Selecting post category by name
 	            's' => get_search_query(),
             );
+            $args['paged'] = get_query_var( 'paged' )
+	            ? get_query_var( 'paged' )
+	            : 1;
+
             $search = new WP_Query( $args );
 
             if ( $search->have_posts() ) :
