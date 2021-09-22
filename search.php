@@ -8,10 +8,6 @@
  */
 
 get_header();
-global $query_string;
-wp_parse_str( $query_string, $search_query );
-$search = new WP_Query( $search_query );
-
 ?>
 
 <!-- BREADCRUMB
@@ -24,7 +20,7 @@ $search = new WP_Query( $search_query );
 				<!-- Breadcrumb -->
 				<ol class="breadcrumb breadcrumb-scroll">
 					<li class="breadcrumb-item">
-						<a href="blog.html" class="text-dark font-size-lg" style="font-weight: 600;">
+						<a href="/newsroom" class="text-dark font-size-lg" style="font-weight: 600;">
 							Newsroom
 						</a>
 					</li>
