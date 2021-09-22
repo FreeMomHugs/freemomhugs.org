@@ -46,7 +46,6 @@ get_header();
             get_template_part( 'template-parts/newsroom-cards-search', 'search' );
 
 
-            the_posts_navigation();
 
         else :
 
@@ -56,22 +55,6 @@ get_header();
         ?>
 
 
-<!-- MORE
-================================================== -->
-<section class="py-7 py-md-10">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-md-9 col-lg-8 col-xl-7">
-
-				<!-- Button -->
-				<a href="#!" class="btn btn-block btn-outline-gray-300 d-flex align-items-center">
-					<span class="mx-auto">Load more</span> <i class="fe fe-arrow-right"></i>
-				</a>
-
-			</div>
-		</div> <!-- / .row -->
-	</div> <!-- / .container -->
-</section>
 
 <?php
 get_template_part( 'template-parts/shape', 'none');
