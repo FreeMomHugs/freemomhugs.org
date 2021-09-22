@@ -79,13 +79,6 @@
                                         </a>
                                     </li>
                                 </ul>
-
-
-                                <!-- Avatar -->
-<!--                                <div class="avatar avatar-lg">-->
-<!--                                    <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">-->
-<!--                                </div>-->
-
                             </div>
                         </div>
 

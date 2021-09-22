@@ -2,54 +2,14 @@
 ================================================== -->
 <section class="pt-7 pt-md-10">
     <div class="container">
-        <div class="row align-items-center mb-5">
-            <div class="col-12 col-md">
-
-                <!-- Heading -->
-                <h3 class="mb-0">
-                    Latest Stories
-                </h3>
-
-                <!-- Text -->
-                <p class="mb-0 text-muted">
-                    Here’s what we've been up to recently.
-                </p>
-
-            </div>
-            <div class="col-12 col-md-auto">
-
-                <!-- Button -->
-                <a href="#!" class="btn btn-sm btn-outline-gray-300 d-none d-md-inline">
-                    View all
-                </a>
-
-            </div>
-        </div> <!-- / .row -->
         <div class="row">
             <?php
-            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-            $args = array(
-                'post_type' => 'post',
-                'offset' => 1,
-                'posts_per_page' => 9,
-                'paged' => $paged,
-                'category_name' => 'newsroom',    //Selecting post category by name
-                'orderby' => 'date',
-                'order'   => 'DESC',
 
-            );
-            $args['paged'] = get_query_var( 'paged' )
-                ? get_query_var( 'paged' )
-                : 1;
-
-            $loop = new WP_Query( $args );
-
-
-            if ( $loop->have_posts() ) :
+            if ( $wp_query->have_posts() ) :
 
             /* Start the Loop */
 
-            while ( $loop->have_posts() ) : $loop->the_post();
+            while ( $wp_query->have_posts() ) : $wp_query->the_post();
 
             /*
              * Include the Post-Format-specific template for the content.
@@ -143,7 +103,7 @@
         <?php
         echo paginate_links( array(
             'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
-            'total'        => $loop->max_num_pages,
+            'total'        => $wp_query->max_num_pages,
             'current'      => max( 1, get_query_var( 'paged' ) ),
             'format'       => '?paged=%#%',
             'show_all'     => false,
