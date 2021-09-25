@@ -1,7 +1,7 @@
 
 <div class="bg-gray-200">
     <div class="container">
-        <nav class="navbar navbar-expand-lg" aria-label="navbar" id="newsroomNavbar">
+        <nav class="navbar navbar-expand-lg py-3" aria-label="navbar" id="newsroomNavbar">
             <a class="navbar-brand text-dark font-size-lg" href="/newsroom" style="font-weight: 600;">
                 Newsroom
             </a>
