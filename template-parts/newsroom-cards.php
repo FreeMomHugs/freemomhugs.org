@@ -27,6 +27,7 @@
         </div> <!-- / .row -->
         <div class="row">
             <?php
+            $num_pages = 0;
             $most_recent_post = wp_get_recent_posts(array(
 	            'numberposts' => 2, // Number of recent posts thumbnails to display
 	            'post_status' => 'publish' // Show only the published posts
@@ -47,6 +48,7 @@
 
 
             if ( $loop->have_posts() ) :
+                $num_pages = $loop->max_num_pages;
 
             /* Start the Loop */
 
@@ -140,24 +142,12 @@
 
         </div> <!-- / .row -->
     </div> <!-- / .container -->
-    <div class="col-12 col-md pb-6 pt-4 text-center">
-        <?php
-        echo paginate_links( array(
-            'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
-            'total'        => $loop->max_num_pages,
-            'current'      => max( 1, get_query_var( 'paged' ) ),
-            'format'       => '?paged=%#%',
-            'show_all'     => false,
-            'type'         => 'plain',
-            'end_size'     => 2,
-            'mid_size'     => 1,
-            'prev_next'    => true,
-            'prev_text'    => sprintf( '<i></i> %1$s', __( 'Newer Posts', 'text-domain' ) ),
-            'next_text'    => sprintf( '%1$s <i></i>', __( 'Older Posts', 'text-domain' ) ),
-            'add_args'     => false,
-            'add_fragment' => '',
-        ) );
-        ?>
+    <!-- Pagination -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 pb-6 pt-4">
+		        <?php echo bootstrap_pagination($paged, $loop ->max_num_pages) ?>
+            </div>
+        </div>
     </div>
-
 </section>
