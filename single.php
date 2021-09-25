@@ -15,10 +15,12 @@ get_header();
 
 
 		<?php
-		if(in_category("Newsroom")) {
+		$category_name = 'Newsroom';
+		$category_to_check = get_term_by( 'name', $category_name, 'category' );
+		if ( in_category( $category_name ) || post_is_in_descendant_category( $category_to_check->term_id ) ) {
 			get_template_part( 'template-parts/newsroom-breadcrumb', 'none');
-        }
-        
+		}
+
 		while ( have_posts() ) :
 			the_post();
 
