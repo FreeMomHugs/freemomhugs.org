@@ -27,7 +27,6 @@
         </div> <!-- / .row -->
         <div class="row">
             <?php
-            $num_pages = 0;
             $most_recent_post = wp_get_recent_posts(array(
 	            'numberposts' => 2, // Number of recent posts thumbnails to display
 	            'post_status' => 'publish' // Show only the published posts
@@ -48,7 +47,6 @@
 
 
             if ( $loop->have_posts() ) :
-                $num_pages = $loop->max_num_pages;
 
             /* Start the Loop */
 
