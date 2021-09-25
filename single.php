@@ -15,7 +15,10 @@ get_header();
 
 
 		<?php
-		get_template_part( 'template-parts/newsroom-breadcrumb', 'none');
+		if(in_category("Newsroom")) {
+			get_template_part( 'template-parts/newsroom-breadcrumb', 'none');
+        }
+        
 		while ( have_posts() ) :
 			the_post();
 
