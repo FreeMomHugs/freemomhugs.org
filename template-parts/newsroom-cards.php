@@ -16,14 +16,6 @@
                 </p>
 
             </div>
-            <div class="col-12 col-md-auto">
-
-                <!-- Button -->
-                <a href="#!" class="btn btn-sm btn-outline-gray-300 d-none d-md-inline">
-                    View all
-                </a>
-
-            </div>
         </div> <!-- / .row -->
         <div class="row">
             <?php
