@@ -20,8 +20,9 @@
         <div class="row">
             <?php
             $most_recent_post = wp_get_recent_posts(array(
-	            'numberposts' => 2, // Number of recent posts thumbnails to display
-	            'post_status' => 'publish' // Show only the published posts
+	            'numberposts' => 1, // Number of recent posts thumbnails to display
+	            'post_status' => 'publish', // Show only the published posts
+	            'category_name' => 'newsroom'
             ));
             $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
             $args = array(
