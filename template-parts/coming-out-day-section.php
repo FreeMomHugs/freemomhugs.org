@@ -8,16 +8,12 @@
             <div class="col-12 col-md-8 col-lg-9 mt-8 text-center">
 
                 <!-- Heading -->
-                <p class="display-6 text-dark font-weight-bold lead">
-                    Celebrating
-                </p>
                 <h1 class="display-1 font-weight-bold text-dark">
                     National Coming Out Day
                 </h1>
                 <p class="display-4 text-dark font-weight-bold lead">
                     October 11
                 </p>
-
             </div>
 
 
@@ -32,8 +28,8 @@
 
             <!-- Sara's Coming Out Day Message -->
 
-            <div class="col-6 col-md-6 mb-8">
-                <p class=" text-center text-dark font-weight-light lead">
+            <div class="col-12 col-md-6 mb-8">
+                <p class="text-center text-dark font-weight-dark lead">
                     Watch a coming out day message from our founder, Sara.
                 </p>
                 <div class="embed-responsive embed-responsive-16by9">
