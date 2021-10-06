@@ -13,8 +13,12 @@
                 <h2 class="display-3 font-weight-bold text-dark">
                     Care Package
                 </h2>
-                <p class="text-muted lead mb-6 pb-0">
+                <p class="text-muted lead pb-0">
                     <span class="text-dark">Care packages will be delivered in time for coming out day.</span>
+                </p>
+
+                <p class="text-muted lead mb-6 pb-0">
+                    <span class="text-dark">Apply by October 1, 11:59pm CDT</span>
                 </p>
 
                 <a class="btn btn-dark btn-pill" href="https://freemomhugs.org/applications/coming-out/">

@@ -27,13 +27,18 @@ get_header();
 
         <?php
         $date_now = date("Y-m-d"); // this format is string comparable
-        get_template_part( 'template-parts/one-hug-at-a-time-header');
 
+        if ($date_now > '2021-08-04' && $date_now < '2021-10-23' ) {
+	        get_template_part( 'template-parts/coming-out-day-section');
+        } else {
+	        get_template_part( 'template-parts/one-hug-at-a-time-header');
+        }
+        
         if ($date_now > '2021-08-04' && $date_now < '2021-10-01' ) {
 	        get_template_part( 'template-parts/care-package');
         }
 
-        if ($date_now > '2021-08-04' && $date_now < '2021-10-15' ) {
+        if ($date_now > '2021-08-04' && $date_now < '2021-10-02' ) {
             get_template_part( 'template-parts/pride-season');
         }
         ?>
