@@ -16,19 +16,9 @@
                 </p>
             </div>
 
-
-            <div class="container">
-                <div class="row mb-8">
-                    <div class="col-12 col-md-6 text-center align-self-center">
-
-                    </div>
-
-                </div>
-            </div>
-
             <!-- Sara's Coming Out Day Message -->
 
-            <div class="col-12 col-md-6 mb-8">
+            <div class="col-12 col-md-6 col-lg-6 mb-8">
                 <p class="text-center text-dark font-weight-dark lead">
                     Watch a coming out day message from our founder, Sara.
                 </p>
