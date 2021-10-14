@@ -158,7 +158,7 @@ function wp_freemomhugs_scripts() {
 
 
     wp_enqueue_script( 'script1', get_template_directory_uri() . '/assets/libs/jquery/dist/jquery.min.js',  1.1, true);
-    wp_enqueue_script( 'script2', get_template_directory_uri() . '/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js',  1.1, true);
+    wp_enqueue_script( 'bootstrapjs', get_template_directory_uri() . '/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js',  1.1, true);
     wp_enqueue_script( 'script3', get_template_directory_uri() . '/assets/js/theme.min.js',  1.1, true);
     wp_enqueue_script( 'script4', get_template_directory_uri() . '/assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js', 1.1, true);
     wp_enqueue_script( 'script5', get_template_directory_uri() . '/assets/libs/aos/dist/aos.js', 1.1, true);
