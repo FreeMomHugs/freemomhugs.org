@@ -17,7 +17,7 @@
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
             $args = array(
-	            'post_type'=>'book', // Your post type name
+	            'post_type'=>'film', // Your post type name
 	            'posts_per_page' => 9,
 	            'paged' => $paged,
             );

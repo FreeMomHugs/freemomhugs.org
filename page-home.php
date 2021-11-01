@@ -27,11 +27,19 @@ get_header();
 
         <?php
         $date_now = date("Y-m-d"); // this format is string comparable
-        get_template_part( 'template-parts/one-hug-at-a-time-header');
 
-        if ($date_now > '2021-08-04') {
+        if ($date_now > '2021-08-04' && $date_now < '2021-10-15' ) {
+	        get_template_part( 'template-parts/coming-out-day-section');
+        } else if ($date_now >= '2021-11-18' && $date_now < '2021-11-22') {
+	        get_template_part( 'template-parts/transgender-day-of-awareness');
+        } else {
+	        get_template_part( 'template-parts/one-hug-at-a-time-header');
+        }
+
+        if ($date_now > '2021-08-04' && $date_now < '2021-10-02' ) {
             get_template_part( 'template-parts/pride-season');
         }
+
         ?>
 
 
@@ -46,9 +54,13 @@ get_header();
                 'button-text' => 'Learn More',
                 'background-url' => '',
             );
-            get_template_part( 'template-parts/paralax-section', 'none' , $paralax1);
-            get_template_part( 'template-parts/front-page-help', 'none');
+            get_template_part( 'template-parts/mission-statement', 'none' , $paralax1);
+//            get_template_part( 'template-parts/front-page-help', 'none');
         ?>
+
+		<?php
+		get_template_part( 'template-parts/home-newsroom-cards', 'none' );
+		?>
 
         <!-- TOGETHER
         ================================================== -->
@@ -86,10 +98,6 @@ get_header();
                 </div>
             </div>
         </section>
-        <?php
-            get_template_part( 'template-parts/home-newsroom-cards', 'none' );
-		?>
-
 
 
 	</main><!-- #main -->

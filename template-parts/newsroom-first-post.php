@@ -42,7 +42,7 @@
                   </span>
 
                         </div>
-                        <a class="col-12 col-md-6 order-md-2 bg-cover card-img-right" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>);" href="#!">
+                        <a class="col-12 col-md-6 order-md-2 bg-cover card-img-right" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>); min-height:30vh;" href="<?php echo the_permalink();?>">
 
                             <!-- Image (placeholder) -->
                             <img src="assets/img/photos/photo-27.jpg" alt="..." class="img-fluid d-md-none invisible">

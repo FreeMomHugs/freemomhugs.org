@@ -30,7 +30,7 @@ get_header();
                 </div> <!-- / .row -->
             </div> <!-- / .container -->
         <?php
-        get_template_part( 'template-parts/book-cards', 'page' );
+        get_template_part( 'template-parts/film-cards', 'page' );
         ?>
 
 

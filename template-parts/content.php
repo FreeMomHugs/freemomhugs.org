@@ -13,7 +13,7 @@
 	<header class="entry-header">
         <!-- HEADER
         ================================================== -->
-        <section class="pt-2 pt-md-11">
+        <section class="pt-2 pt-md-4">
             <div class="container">
                 <div class="row mb-0">
                     <div class="col-12 col-md-10 col-lg-9 col-xl-8">
@@ -59,6 +59,8 @@
                             }
                              ?>
                         </p>
+                    </div>
+                </div>
 
                         <!-- Meta -->
                         <div class="row align-items-center pb-5">
@@ -77,34 +79,18 @@
                                         </a>
                                     </li>
                                 </ul>
-
-
-                                <!-- Avatar -->
-<!--                                <div class="avatar avatar-lg">-->
-<!--                                    <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">-->
-<!--                                </div>-->
-
-                            </div>
-                            <div class="col ml-n5">
-
-                                <!-- Name -->
-<!--                                <h6 class="text-uppercase mb-0">-->
-<!--                                    --><?php //the_author(); ?>
-<!--                                </h6>-->
-
-
-
-                            </div>
-                            <div class="col-auto">
-
-
                             </div>
                         </div>
 
-                    </div>
-                </div> <!-- / .row -->
+
                 <!-- Image -->
-                <img src="<?php echo get_the_post_thumbnail_url(); ?>"/>
+                <div class="row">
+                    <div class="col-12">
+                        <img class="rounded mx-auto d-block" src="<?php echo get_the_post_thumbnail_url(); ?>"/>
+                    </div>
+
+                </div>
+
 
             </div> <!-- / .container -->
         </section>

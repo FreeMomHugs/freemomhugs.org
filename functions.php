@@ -158,7 +158,7 @@ function wp_freemomhugs_scripts() {
 
 
     wp_enqueue_script( 'script1', get_template_directory_uri() . '/assets/libs/jquery/dist/jquery.min.js',  1.1, true);
-    wp_enqueue_script( 'script2', get_template_directory_uri() . '/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js',  1.1, true);
+    wp_enqueue_script( 'bootstrapjs', get_template_directory_uri() . '/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js',  1.1, true);
     wp_enqueue_script( 'script3', get_template_directory_uri() . '/assets/js/theme.min.js',  1.1, true);
     wp_enqueue_script( 'script4', get_template_directory_uri() . '/assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js', 1.1, true);
     wp_enqueue_script( 'script5', get_template_directory_uri() . '/assets/libs/aos/dist/aos.js', 1.1, true);
@@ -330,3 +330,58 @@ function lc_create_post_type_books() {
     );
 }
 add_action( 'init', 'lc_create_post_type_books' );
+
+function bootstrap_pagination($paged, $max_num_pages, $echo = true) {
+	$largerInt = 999999999; // need an unlikely integer
+	$pages = paginate_links([
+		'base'      => str_replace($largerInt, '%#%', esc_url(get_pagenum_link($largerInt))),
+		'format'    => '?paged=%#%',
+		'current'   => max(1, $paged),
+		'total'     => $max_num_pages,
+		'type'      => 'array',
+		'prev_next' => true,
+		'prev_text' => __('« Prev'),
+		'next_text' => __('Next »'),
+	]);
+
+	if (is_array($pages)) {
+		$paged = ($paged == 0) ? 1 : $paged;
+
+		$pagination = '<ul class="pagination justify-content-center">';
+		foreach ($pages as $page) {
+			//$page = strip_tags($page);
+			$pagination .= '<li class="page-item">' . str_replace('page-numbers', 'page-link', $page) . '</li>';
+		}
+		$pagination .= '</ul>';
+
+		if ($echo) {
+			echo $pagination;
+		} else {
+			return $pagination;
+		}
+	}
+}
+
+/**
+ * Tests if any of a post's assigned categories are descendants of target categories
+ *
+ * @param int|array $cats The target categories. Integer ID or array of integer IDs
+ * @param int|object $_post The post. Omit to test the current post in the Loop or main query
+ * @return bool True if at least 1 of the post's categories is a descendant of any of the target categories
+ * @see get_term_by() You can get a category by name or slug, then pass ID to this function
+ * @uses get_term_children() Passes $cats
+ * @uses in_category() Passes $_post (can be empty)
+ * @version 2.7
+ * @link http://codex.wordpress.org/Function_Reference/in_category#Testing_if_a_post_is_in_a_descendant_category
+ */
+if ( ! function_exists( 'post_is_in_descendant_category' ) ) {
+	function post_is_in_descendant_category( $cats, $_post = null ) {
+		foreach ( (array) $cats as $cat ) {
+			// get_term_children() accepts integer ID only
+			$descendants = get_term_children( (int) $cat, 'category' );
+			if ( $descendants && in_category( $descendants, $_post ) )
+				return true;
+		}
+		return false;
+	}
+}
