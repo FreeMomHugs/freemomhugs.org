@@ -33,8 +33,12 @@
                     One hug at a time.
                 </p>
                 <!-- EIN -->
-                <p class="text-gray-700 mb-2">
+                <p class="text-gray-700 mb-5">
                     EIN: 83-1530294
+                </p>
+                <!-- Phone # -->
+                <p class="text-gray-700 mb-2">
+                    Phone Number: 999-999-9283
                 </p>
 
 
