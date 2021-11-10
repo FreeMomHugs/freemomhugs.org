@@ -33,7 +33,7 @@ get_header();
         } else if ($date_now >= '2021-11-18' && $date_now < '2021-11-22') {
 	        get_template_part( 'template-parts/transgender-day-of-awareness');
         } else {
-	        get_template_part( 'template-parts/one-hug-at-a-time-header');
+	        get_template_part( 'template-parts/one-hug-at-a-time-hero');
         }
 
         if ($date_now > '2021-08-04' && $date_now < '2021-10-02' ) {
@@ -59,7 +59,7 @@ get_header();
         ?>
 
 		<?php
-		get_template_part( 'template-parts/home-newsroom-cards', 'none' );
+		get_template_part( 'template-parts/home-newsroom-card-grid', 'none' );
 		?>
 
         <!-- TOGETHER
@@ -101,6 +101,62 @@ get_header();
 
 
 	</main><!-- #main -->
+
+    <!-- JS Plugins Init. -->
+    <script>
+        (function() {
+            // INITIALIZATION OF HEADER
+            // =======================================================
+            new HSHeader('#header').init()
+
+
+            // INITIALIZATION OF MEGA MENU
+            // =======================================================
+            new HSMegaMenu('.js-mega-menu', {
+                desktop: {
+                    position: 'left'
+                }
+            })
+
+
+            // INITIALIZATION OF SHOW ANIMATIONS
+            // =======================================================
+            new HSShowAnimation('.js-animation-link')
+
+
+            // INITIALIZATION OF BOOTSTRAP VALIDATION
+            // =======================================================
+            HSBsValidation.init('.js-validate', {
+                onSubmit: data => {
+                    data.event.preventDefault()
+                    alert('Submited')
+                }
+            })
+
+
+            // INITIALIZATION OF BOOTSTRAP DROPDOWN
+            // =======================================================
+            HSBsDropdown.init()
+
+
+            // INITIALIZATION OF GO TO
+            // =======================================================
+            new HSGoTo('.js-go-to')
+
+
+            // INITIALIZATION OF AOS
+            // =======================================================
+            AOS.init({
+                duration: 650,
+                once: true
+            });
+
+
+            // INITIALIZATION OF TOGGLE SWITCH
+            // =======================================================
+            new HSToggleSwitch('.js-toggle-switch')
+        })()
+    </script>
 
 <?php
 get_template_part( 'template-parts/shape', 'none');
