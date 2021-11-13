@@ -406,4 +406,5 @@ function menu_set_dropdown( $sorted_menu_items ) {
 	}
 	return $sorted_menu_items;
 }
+add_theme_support( 'custom-header' );
 add_filter( 'wp_nav_menu_objects', 'menu_set_dropdown', 10, 2 );

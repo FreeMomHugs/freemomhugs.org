@@ -12,110 +12,88 @@
  * @package WP-FreeMomHugs
  */
 
-get_header();
+
+$args = [
+	"header_background_color" => "dark",
+	"bar" => "foo",
+];
+get_header("" , $args );
 ?>
 
+
+
 	<main id="primary" class="site-main">
-        <!-- WELCOME
-         ================================================== -->
-        <section data-jarallax data-speed=".8" class="py-8 py-md-12 overlay jarallax" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center align-content-center">
-                        <h6 class="display-5 font-weight-bold text-dark">
-		                    Resources
+        <div class="row mt-6">
+            <br>
+        </div>
 
-                        </h6>
-                        <!-- Heading -->
-                        <h1 class="font-weight-bold text-dark display-3" style="line-height: 1.04167;">
-		                    Connecting the LGBTQ+ community to educational resources.
-
-                        </h1>
-
-
-                    </div>
-                </div> <!-- / .row -->
-            </div> <!-- / .container -->
-        </section>
-
-            <div class="container">
-                <div class="row mb-10">
-
-                    <div class="col-12 col-lg-4 d-flex mb-6 mb-lg-0">
-                        <a href="/books" class="text-decoration-none text-dark d-flex">
-                            <!-- Card -->
-                            <div class="card d-flex lift lift-lg" style="border-radius: 20px;background-color: #edf2fb;">
-
-                                <!-- Image -->
-                                <img src="https://static.freemomhugs.org/wp-content/uploads/2021/09/child-reading-circle-1024x683.jpeg" alt="..." >
-
-
-                                <!-- Body -->
-                                <div class="card-body">
-                                    <h2 class="text-center display-6" style="font-weight: 600;">
-                                        Books
-                                    </h2>
-                                    <p class="text-center font-weight-bold">
-                                        Explore fiction, non-fiction, biographies, and childrens books on LGBTQ+ issues.
-                                    </p>
-
-
-                                </div>
-
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="col-12 col-lg-4 d-flex mb-6 mb-lg-0">
-                        <a href="/organizations" class="text-decoration-none text-dark d-flex">
-                            <!-- Card -->
-                            <div class="card lift lift-lg" style="border-radius: 20px;background-color: #edf2fb;">
-
-                                <!-- Image -->
-                                <img src="https://static.freemomhugs.org/wp-content/uploads/2021/09/hrc-hq-1024x683.jpeg" alt="...">
-
-
-                                <!-- Body -->
-                                <div class="card-body">
-                                    <h2 class="text-center display-6" style="font-weight: 600;">
-                                        Organizations
-                                    </h2>
-                                    <p class="text-center font-weight-bold">
-                                        Learn about other LGBTQ+ organizations
-                                    </p>
-
-
-                                </div>
-
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-lg-4 d-flex mb-6 mb-lg-0">
-                        <a href="/films" class="text-decoration-none text-dark d-flex">
-                            <!-- Card -->
-                            <div class="card d-flex lift lift-lg" style="border-radius: 20px;background-color: #edf2fb;">
-                            <!-- Image -->
-                            <img src="https://static.freemomhugs.org/wp-content/uploads/2021/09/movie-family-1024x683.jpeg" alt="...">
-
-
-                            <!-- Body -->
-                            <div class="card-body">
-                                <h2 class="text-center display-6" style="font-weight: 600;">
-                                    Films and TV Shows
-                                </h2>
-                                <p class="text-center font-weight-bold">
-                                    Explore documentaries, movies, and TV shows.
-                                </p>
-
-
-                            </div>
-
-                        </div>
-                        </a>
-                    </div>
-
-                </div> <!-- / .row -->
+        <!-- Card Grid -->
+        <div class="container content-space-2 content-space-lg-3">
+            <!-- Heading -->
+            <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+                <span class="text-cap">Resources</span>
+                <h2>Connecting the LGBTQ+ community to educational resources.</h2>
             </div>
+            <!-- End Heading -->
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
+                <div class="col mb-5">
+                    <!-- Card -->
+                    <div class="card h-100">
+                        <img class="card-img-top" src="https://static.freemomhugs.org/wp-content/uploads/2021/09/child-reading-circle-1024x683.jpeg" alt="Image Description">
+
+                        <div class="card-body">
+                            <p class="card-text">Amazon launched their enterprise platform and built a powerful user experience.</p>
+                        </div>
+
+                        <div class="card-footer pt-0">
+                            <a class="card-link" href="/books">Explore books <i class="bi-chevron-right small ms-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col mb-5">
+                    <!-- Card -->
+                    <div class="card h-100">
+                        <img class="card-img-top" src="https://static.freemomhugs.org/wp-content/uploads/2021/09/hrc-hq-1024x683.jpeg" alt="Image Description">
+
+                        <div class="card-body">
+                            <p class="card-text">Mapbox empowers marketers to create digital marketing dashboards easily and share them with their team.</p>
+                        </div>
+
+                        <div class="card-footer pt-0">
+                            <a class="card-link" href="../page-customer-story.html"> Explore Organizations <i class="bi-chevron-right small ms-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col mb-5">
+                    <!-- Card -->
+                    <div class="card h-100">
+                        <img class="card-img-top" src="https://static.freemomhugs.org/wp-content/uploads/2021/09/movie-family-1024x683.jpeg" alt="Image Description">
+                        <div class="card-body">
+                            <p class="card-text">Netflix's mission is to create a planet run by the sun. In order to achieve this goal, they needed to find a way to make solar simple.</p>
+                        </div>
+
+                        <div class="card-footer pt-0">
+                            <a class="card-link" href="../page-customer-story.html">Explore Films <i class="bi-chevron-right small ms-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Row -->
+
+            <div class="text-center">
+                <a class="btn btn-outline-primary" href="#">View all stories</a>
+            </div>
+        </div>
+        <!-- End Card Grid -->
 
         <!-- SHAPE
 		================================================== -->
@@ -128,6 +106,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_template_part( 'template-parts/shape', 'none');
 get_template_part( 'template-parts/cta-newsletter-sub', 'none');
 get_footer();

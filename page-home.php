@@ -70,7 +70,7 @@ get_header();
                     <div class="col-12 col-md-6 col-lg-5">
 
                         <!-- Badge -->
-                        <span class="badge badge-pill badge-primary-soft mb-3">
+                        <span class="badge badge-pill badge-primary-soft mb-3 ml-0 p-0">
               <span class="h6 text-uppercase">Support</span>
             </span>
 
@@ -84,6 +84,7 @@ get_header();
                         <p class="font-size-lg text-gray-700 mb-6">
                             I’m a Christian mom with a gay kid living in Oklahoma saying enough is enough. If I don’t fight for my son (and his rights) like my hair is on fire, then who will? It’s time we celebrate our LGBTQ+ children. And I won’t stop until I no longer hear horror stories from the LGBTQ+ community and their mothers.
                         </p>
+                        <a class="btn btn-soft-dark btn-sm btn-transition rounded-pill px-6" href="#">Learn More about Sara</a>
 
                     </div>
                     <div class="col-12 col-md-6">
@@ -159,6 +160,5 @@ get_header();
     </script>
 
 <?php
-get_template_part( 'template-parts/shape', 'none');
 get_template_part( 'template-parts/cta-newsletter-sub', 'none');
 get_footer();

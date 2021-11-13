@@ -1,12 +1,12 @@
 <!-- CTA
 ================================================== -->
-<section class="pt-6 pt-md-8 bg-dark">
+<section class="pt-6 pt-md-8 bg-light">
     <div class="container pb-6 pb-md-8 border-bottom border-gray-300">
         <div class="row align-items-center">
             <div class="col-12 col-md">
 
                 <!-- Heading -->
-                <h3 class="text-light mb-1 font-weight-bold">
+                <h3 class="text-dark mb-1 font-weight-bold">
                     Get our stories delivered
                 </h3>
 
