@@ -1,13 +1,8 @@
-<!-- pride season
-
-
-
-================================================== -->
+<!-- Transgender Day of Rememberance Hero -->
 <link rel="stylesheet" href="https://static.freemomhugs.org/css/candle.css"/>
-
-<section class="bg-cover bg-black">
+<section class="bg-img-start bg-cover bg-black">
     <div class="container-fluid d-flex flex-column">
-        <div class="row align-items-center justify-content-center py-6 py-md-8">
+        <div class="row align-items-center justify-content-center mt-8 py-6 py-md-8">
             <div class="col-12 col-md-8 col-lg-9 text-center">
                 <!-- Heading -->
                 <h1 class="display-1 font-weight-bold text-light mt-2">
@@ -17,7 +12,7 @@
                     Transgender Day of Remembrance
                 </p>
                 <p class="display-6 text-light font-weight-bold lead">
-                    11.20.21
+                    Nov 20
                 </p>
             </div>
         </div> <!-- / .row -->

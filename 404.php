@@ -7,54 +7,30 @@
  * @package WP-FreeMomHugs
  */
 
-get_header();
+$args = [
+	"header_background_color" => "dark",
+	"bar" => "foo",
+];
+get_header("" , $args );
 ?>
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="content" role="main">
+        <!-- Content -->
+        <div class="container text-center">
+            <div class="mb-3">
+                <img class="img-fluid" src="./assets/img/illustrations/sorry.png" alt="Image Description" style="width: 18rem;">
+            </div>
 
-	<main id="primary" class="site-main">
+            <div class="mb-4">
+                <p class="fs-4 mb-0">Oops! Looks like you followed a bad link.</p>
+                <p class="fs-4">If you think this is a problem with us, please <a class="link" href="#">tell us</a>.</p>
+            </div>
 
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'wp-freemomhugs' ); ?></h1>
-			</header><!-- .page-header -->
-
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'wp-freemomhugs' ); ?></p>
-
-					<?php
-					get_search_form();
-
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'wp-freemomhugs' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories(
-								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								)
-							);
-							?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smiley */
-					$wp_freemomhugs_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'wp-freemomhugs' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$wp_freemomhugs_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
-
-	</main><!-- #main -->
+            <a class="btn btn-primary" href="./index.html">Go back home</a>
+        </div>
+        <!-- End Content -->
+    </main>
+    <!-- ========== END MAIN CONTENT ========== -->
 
 <?php
 get_footer();

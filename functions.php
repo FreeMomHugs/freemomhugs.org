@@ -354,10 +354,15 @@ function bootstrap_pagination($paged, $max_num_pages, $echo = true) {
 	if (is_array($pages)) {
 		$paged = ($paged == 0) ? 1 : $paged;
 
-		$pagination = '<ul class="pagination justify-content-center">';
-		foreach ($pages as $page) {
+		$pagination = '<ul class="pagination justify-content-end">';
+		foreach ($pages as $pagenum=>$page) {
 			//$page = strip_tags($page);
-			$pagination .= '<li class="page-item">' . str_replace('page-numbers', 'page-link', $page) . '</li>';
+			if ($paged == $pagenum) {
+				$pagination .= '<li class="page-item active">' . str_replace('page-numbers', 'page-link', $page) . '</li>';
+			} else {
+				$pagination .= '<li class="page-item">' . str_replace('page-numbers', 'page-link', $page) . '</li>';
+			}
+
 		}
 		$pagination .= '</ul>';
 

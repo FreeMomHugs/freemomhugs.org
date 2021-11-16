@@ -56,16 +56,10 @@
                 <!-- Card -->
                 <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
 
-                        <!-- Image -->
+                    <!-- Image -->
                     <a href="<?php echo the_permalink();?>">
                         <div class="card-img-top" href="<?php echo the_permalink();?>">
                             <img src="<?php echo the_post_thumbnail_url();?>" alt="..." class="card-img-top cover">
-                        </div>
-
-                        <div class="position-relative">
-                            <div class="shape shape-fluid-x shape-bottom svg-shim text-white">
-                                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
-                            </div>
                         </div>
                     </a>
 
@@ -90,10 +84,6 @@
                         <!-- Divider -->
                         <hr class="card-meta-divider">
 
-                        <!-- Avatar -->
-<!--                        <div class="avatar avatar-sm mr-2">-->
-<!--                            <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">-->
-<!--                        </div>-->
 
                         <!-- Category -->
                         <h6 class="text-uppercase text-muted mr-2 mb-0 font-weight-bold">
@@ -124,9 +114,6 @@
 
             endwhile;
 
-            else :
-
-                get_template_part( 'template-parts/content', 'none' );
 
             endif; ?>
 
