@@ -7,6 +7,7 @@
  * @package WP-FreeMomHugs
  */
 
+require get_template_directory() . '/WordPress-Extended-Bootstrap-Nav-Walker/extendednav.php';
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
