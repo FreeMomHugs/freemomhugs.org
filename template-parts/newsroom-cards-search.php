@@ -19,43 +19,38 @@
         <div class="row">
             <div class="col-12">
 
-                <!-- Form -->
-                <form class="rounded shadow" action="/" method="GET">
-                    <div class="input-group input-group-lg">
-
-                        <!-- Prepend -->
-                        <div class="input-group-prepend">
-                  <span class="input-group-text border-0 pr-1">
-                    <i class="fe fe-search"></i>
-                  </span>
-                        </div>
-
-                        <!-- Input -->
-                        <input name="s" type="text" class="form-control border-0 px-1" aria-label="Search our blog..." placeholder="Search our blog..." value="<?php echo get_search_query(); ?>">
-
-                        <!-- Append -->
-                        <div class="input-group-append">
-                  <span class="input-group-text border-0 py-0 pl-1 pr-3">
-
-                    <!-- Text -->
-                    <span class="h6 text-uppercase text-muted d-none d-md-block mb-0 mr-5">
-                      <?php
-                      $total_results = $search->found_posts;
-                      printf( esc_html__( '%d Results', 'wp-freemomhugs' ), $total_results);
-                      ?>
-                    </span>
-
-                      <!-- Button -->
-                    <button type="submit" class="btn btn-sm btn-black">
-                      Search
-                    </button>
-
-                  </span>
-                        </div>
-
+                <!-- Search -->
+                <div class="mb-4">
+                    <div class="mb-3">
+                        <h4>
+	                        <?php
+	                        $total_results = $search->found_posts;
+	                        printf( esc_html__( '%d Results', 'wp-freemomhugs' ), $total_results);
+	                        ?>
+                            <span class="text-body small">for "<?php echo htmlentities(get_search_query()); ?>"</span>
+                        </h4>
                     </div>
-                </form>
 
+                    <form class="rounded shadow" action="/" method="GET">
+                        <!-- Input Card -->
+                        <div class="input-card border">
+                            <div class="input-card-form">
+                                <label for="searchAppsForm" class="form-label visually-hidden">Search</label>
+                                <div class="input-group input-group-merge">
+          <span class="input-group-prepend input-group-text">
+            <i class="bi-search"></i>
+          </span>
+                                    <input name="s" type="text" class="form-control" id="searchAppsForm" placeholder="Search" aria-label="Search for apps" value="<?php echo get_search_query(); ?>">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi-arrow-right"></i>
+                            </button>
+                        </div>
+                        <!-- End Input Card -->
+                    </form>
+                </div>
+                <!-- End Search -->
             </div>
         </div> <!-- / .row -->
     </div>

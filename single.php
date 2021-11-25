@@ -6,8 +6,11 @@
  *
  * @package WP-FreeMomHugs
  */
-
-get_header();
+$args = [
+	"header_background_color" => "dark",
+	"bar" => "foo",
+];
+get_header("" , $args );
 ?>
 
 	<main id="primary" class="site-main">
@@ -24,7 +27,7 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/content', get_post_type() );
+			get_template_part( 'template-parts/content-post', get_post_type() );
 
 
 			// If comments are open or we have at least one comment, load up the comment template.
@@ -38,6 +41,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_template_part( 'template-parts/shape', 'none');
 get_template_part( 'template-parts/cta-newsletter-sub', 'none');
 get_footer();

@@ -7,7 +7,11 @@
  * @package WP-FreeMomHugs
  */
 
-get_header();
+$args = [
+	"header_background_color" => "dark",
+	"bar" => "foo",
+];
+get_header("" , $args );
 ?>
 
 <!-- BREADCRUMB
@@ -15,7 +19,7 @@ get_header();
 <nav class="bg-gray-200">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 ml-4 ml-lg-0 pl-0">
+			<div class="col-12 ml-4 ml-lg-0 pl-0 mt-2">
 
 				<!-- Breadcrumb -->
 				<ol class="breadcrumb breadcrumb-scroll">
@@ -57,7 +61,6 @@ get_header();
 
 
 <?php
-get_template_part( 'template-parts/shape', 'none');
 get_template_part( 'template-parts/cta-newsletter-sub', 'none');
 get_footer();
 ?>

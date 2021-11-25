@@ -18,7 +18,11 @@
  * @package WP-FreeMomHugs
  */
 
-get_header();
+$args = [
+	"header_background_color" => "dark",
+	"bar" => "foo",
+];
+get_header("" , $args );
 ?>
     <!-- BREADCRUMB
     ================================================== -->
@@ -105,6 +109,5 @@ get_header();
     </main><!-- #main -->
 
 <?php
-get_template_part( 'template-parts/shape', 'none');
 get_template_part( 'template-parts/cta-newsletter-sub', 'none');
 get_footer();
