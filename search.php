@@ -19,21 +19,23 @@ get_header("" , $args );
 <nav class="bg-gray-200">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 ml-4 ml-lg-0 pl-0 mt-2">
+			<div class="col-12 ml-4 ml-lg-0 pl-0 mt-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="/newsroom" class="text-dark font-size-lg" style="font-weight: 600;">
+                                Newsroom
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <a href="" class="text-dark font-size-lg" style="font-weight: 600;">
+                                Search Results
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
 
-				<!-- Breadcrumb -->
-				<ol class="breadcrumb breadcrumb-scroll">
-					<li class="breadcrumb-item">
-						<a href="/newsroom" class="text-dark font-size-lg" style="font-weight: 600;">
-							Newsroom
-						</a>
-					</li>
-					<li class="breadcrumb-item active text-dark font-size-lg" aria-current="page" style="font-weight: 600;">
-                        <a href="" class="text-dark font-size-lg" style="font-weight: 600;">
-                            Search Results
-                        </a>
-					</li>
-				</ol>
+                <!-- Breadcrumb -->
 
 			</div>
 		</div> <!-- / .row -->
