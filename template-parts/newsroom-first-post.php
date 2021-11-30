@@ -6,16 +6,6 @@
         </div>
         <!-- End Col -->
 
-        <div class="col-md-5 col-lg-4">
-            <form action="/" method="GET">
-                <!-- Input Card -->
-                <div class="input-group" >
-                    <input name="s" type="text" class="form-control" placeholder="Search articles" aria-label="Search articles">
-                    <button type="submit" class="btn btn-primary"><i class="bi-search"></i></button>
-                </div>
-                <!-- End Input Card -->
-            </form>
-        </div>
         <!-- End Col -->
     </div>
     <!-- End Row -->
@@ -148,17 +138,33 @@
                 </div>
                 <!-- End Card Body -->
 
-                <!-- Card Footer -->
-                <div class="card-footer">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-grow-1">
-                            <div class="d-flex justify-content-end">
-                                <p class="card-text">July 15</p>
+                    <!-- Date -->
+                    <!-- Card Footer -->
+                    <div class="card-footer">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <div class="d-flex">
+                                    <!-- Category -->
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p class="h6 text-uppercase text-muted font-weight-bold">
+						                <?php
+						                $category = get_the_category();
+						                $catName = $category[0]->cat_name;
+						                echo $catName;
+						                ?>
+                                    </p>
+                                    <p class="h6 text-uppercase text-muted font-weight-bold">
+                                        <time datetime="<?php echo get_the_date("Y-m-d");?>">
+							                <?php
+							                the_date('M d');
+							                ?>
+                                        </time>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- End Card Footer -->
             </div>
             </a>
             <!-- End Card -->

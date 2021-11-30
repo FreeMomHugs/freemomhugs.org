@@ -31,7 +31,7 @@
                         <div class="collapse navbar-collapse py-4 py-lg-0" id="newsroomNavbarCollapse" style="position:relative;left: 0;">
                             <form class="form-inline my-0 ml-auto" action="/" method="GET">
                                 <input name="s" type="text" class="py-2 border-0" aria-label="Search" placeholder="Search">
-                                <button type="submit" class="btn btn-dark" py-1 h-100 mt-2 mt-md-0 ml-3">
+                                <button type="submit" class="btn btn btn-soft-secondary h-100">
                                     Search
                                 </button>
                             </form>

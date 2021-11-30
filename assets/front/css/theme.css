@@ -5078,6 +5078,11 @@ fieldset:disabled .btn {
   width: 100%;
 }
 
+.card-img-top {
+  height: 15vw;
+  object-fit: cover;
+}
+
 .card-img,
 .card-img-top {
   border-top-left-radius: 0.4375rem;

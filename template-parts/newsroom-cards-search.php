@@ -82,7 +82,7 @@
 
                         <!-- Image -->
                     <a href="<?php echo the_permalink();?>">
-                        <div class="card-img-top" href="<?php echo the_permalink();?>">
+                        <div class="card-img" href="<?php echo the_permalink();?>">
                             <img src="<?php echo the_post_thumbnail_url();?>" alt="..." class="card-img-top cover">
                         </div>
 
@@ -119,23 +119,36 @@
 <!--                            <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">-->
 <!--                        </div>-->
 
-                        <!-- Category -->
-                        <h6 class="text-uppercase text-muted mr-2 mb-0 font-weight-bold">
-                            <?php
-                            $category = get_the_category();
-                            $catName = $category[0]->cat_name;
-                            echo $catName;
-                            ?>
-                        </h6>
+
 
                         <!-- Date -->
-                        <p class="h6 text-uppercase text-muted mb-0 ml-auto font-weight-bold">
-                            <time datetime="<?php echo get_the_date("Y-m-d");?>">
-                                <?php
-                                the_date('M d');
-                                ?>
-                            </time>
-                        </p>
+                        <!-- Card Footer -->
+                        <div class="card-footer">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-grow-1">
+                                    <div class="d-flex">
+                                        <!-- Category -->
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="h6 text-uppercase text-muted font-weight-bold">
+		                                    <?php
+		                                    $category = get_the_category();
+		                                    $catName = $category[0]->cat_name;
+		                                    echo $catName;
+		                                    ?>
+                                        </p>
+                                        <p class="h6 text-uppercase text-muted font-weight-bold">
+                                            <time datetime="<?php echo get_the_date("Y-m-d");?>">
+			                                    <?php
+			                                    the_date('M d');
+			                                    ?>
+                                            </time>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
 
                     </a>
 
