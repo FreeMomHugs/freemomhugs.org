@@ -28,10 +28,8 @@ get_header();
         <?php
         $date_now = date("Y-m-d"); // this format is string comparable
 
-        if ($date_now > '2021-08-04' && $date_now < '2021-10-15' ) {
-	        get_template_part( 'template-parts/coming-out-day-section');
-        } else if ($date_now >= '2021-11-18' && $date_now < '2021-11-22') {
-	        get_template_part( 'template-parts/transgender-day-of-awareness');
+       if ($date_now < '2021-12-03') {
+	        get_template_part( 'template-parts/world-aids-day');
         } else {
 	        get_template_part( 'template-parts/one-hug-at-a-time-header');
         }

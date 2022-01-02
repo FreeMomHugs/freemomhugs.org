@@ -36,7 +36,6 @@
                 <p class="text-gray-700 mb-2">
                     EIN: 83-1530294
                 </p>
-                
 
 
                 <!-- Social -->

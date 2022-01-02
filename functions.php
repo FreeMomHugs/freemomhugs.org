@@ -9,7 +9,6 @@
 
 require get_template_directory() . '/WordPress-Extended-Bootstrap-Nav-Walker/extendednav.php';
 
-
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );
@@ -385,3 +384,18 @@ if ( ! function_exists( 'post_is_in_descendant_category' ) ) {
 		return false;
 	}
 }
+
+function menu_set_dropdown( $sorted_menu_items ) {
+	$last_top = 0;
+	foreach ( $sorted_menu_items as $key => $obj ) {
+		// it is a top lv item?
+		if ( 0 == $obj->menu_item_parent ) {
+			// set the key of the parent
+			$last_top = $key;
+		} else {
+			$sorted_menu_items[$last_top]->classes['dropdown'] = 'dropdown';
+		}
+	}
+	return $sorted_menu_items;
+}
+add_filter( 'wp_nav_menu_objects', 'menu_set_dropdown', 10, 2 );
