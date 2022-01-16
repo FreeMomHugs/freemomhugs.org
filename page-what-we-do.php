@@ -16,8 +16,6 @@ get_header();
 ?>
 
     <main id="primary" class="site-main">
-        <!-- WELCOME
-            ================================================== -->
         <section class="overlay overlay-dark overlay-40" data-jarallax data-speed=".8" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>)">
             <div class="container d-flex flex-column">
                 <div class="row align-items-center justify-content-center min-vh-100 py-8 py-md-11">

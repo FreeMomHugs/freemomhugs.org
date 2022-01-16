@@ -67,7 +67,7 @@
         mapkit.init({
             authorizationCallback: function(done) {
                 var xhr = new XMLHttpRequest();
-                xhr.open("GET", "https://callisto.freemomhugs.org/maps/jwt?site=https://freemomhugs.org");
+                xhr.open("GET", "https://maps.freemomhugs.app/maps/jwt?site=https://freemomhugs.org");
                 xhr.addEventListener("load", function() {
                     done(this.responseText);
                 });
