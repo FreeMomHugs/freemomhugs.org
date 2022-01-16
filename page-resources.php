@@ -40,7 +40,6 @@ get_header();
 
             <div class="container">
                 <div class="row mb-10">
-
                     <div class="col-12 col-lg-4 d-flex mb-6 mb-lg-0">
                         <a href="/books" class="text-decoration-none text-dark d-flex">
                             <!-- Card -->
@@ -48,8 +47,6 @@ get_header();
 
                                 <!-- Image -->
                                 <img src="https://static.freemomhugs.org/wp-content/uploads/2021/09/child-reading-circle-1024x683.jpeg" alt="..." >
-
-
                                 <!-- Body -->
                                 <div class="card-body">
                                     <h2 class="text-center display-6" style="font-weight: 600;">
@@ -58,8 +55,6 @@ get_header();
                                     <p class="text-center font-weight-bold">
                                         Explore fiction, non-fiction, biographies, and childrens books on LGBTQ+ issues.
                                     </p>
-
-
                                 </div>
 
                             </div>
