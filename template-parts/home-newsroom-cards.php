@@ -47,14 +47,14 @@
                         <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
 
                             <!-- Image -->
-                            <a class="card-img-top" href="<?php echo the_permalink();?>">
+                            <a class="card-img-top" style="min-height: 300px;" href="<?php echo the_permalink();?>">
 
                                 <!-- Image -->
                                 <?php
-                                    $image_arr = wp_get_attachment_image_src(get_post_thumbnail_id($post_array->ID), 'medium');
+                                    $image_arr = wp_get_attachment_image_src(get_post_thumbnail_id($post_array->ID), 'large');
                                     $image_url = $image_arr[0]; // $image_url is your URL.
                                 ?>
-                                <img src="<?php echo $image_url; ?>" alt="..." class="card-img-top cover">
+                                <img src="<?php echo $image_url; ?>" alt="..." class="card-img-top cover" style="min-height: 300px;">
 
                                 <!-- Shape -->
 <!--                                <div class="position-relative">-->

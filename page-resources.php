@@ -28,8 +28,7 @@ get_header();
                         </h6>
                         <!-- Heading -->
                         <h1 class="font-weight-bold text-dark display-3" style="line-height: 1.04167;">
-		                    Connecting the LGBTQ+ community to educational resources.
-
+		                    Connecting the LGBTQ+ community to robust educational resources.
                         </h1>
 
 

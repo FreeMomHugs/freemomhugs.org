@@ -27,16 +27,16 @@ get_header();
 
         <?php
         $date_now = date("Y-m-d"); // this format is string comparable
-
+        if ( $date_now < '2022-07-02' ) {
+	        get_template_part( 'template-parts/pride-season');
+        }
        if ($date_now < '2021-12-03') {
 	        get_template_part( 'template-parts/world-aids-day');
         } else {
 	        get_template_part( 'template-parts/one-hug-at-a-time-header');
         }
 
-        if ($date_now > '2021-08-04' && $date_now < '2021-10-02' ) {
-            get_template_part( 'template-parts/pride-season');
-        }
+
 
         ?>
 
