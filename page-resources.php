@@ -39,11 +39,29 @@ get_header();
 
             <div class="container">
                 <div class="row mb-10">
-                    <div class="col-12 col-lg-4 d-flex mb-6 mb-lg-0">
+                    <div class="col-12 col-lg-4 d-flex mb-6 mb-lg-5">
+                        <a href="/allyship" class="text-decoration-none text-dark d-flex">
+                            <!-- Card -->
+                            <div class="card d-flex lift lift-lg" style="border-radius: 20px;background-color: #edf2fb;">
+                                <!-- Image -->
+                                <img src="https://static.freemomhugs.org/wp-content/uploads/2022/05/31205201/two-people-pride-flags-scaled.jpg" alt="..." >
+                                <!-- Body -->
+                                <div class="card-body">
+                                    <h2 class="text-center display-6" style="font-weight: 600;">
+                                        Allyship
+                                    </h2>
+                                    <p class="text-center font-weight-bold">
+                                        10 easy tips for demonstrating allyship
+                                    </p>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-4 d-flex mb-6 mb-lg-5">
                         <a href="/books" class="text-decoration-none text-dark d-flex">
                             <!-- Card -->
                             <div class="card d-flex lift lift-lg" style="border-radius: 20px;background-color: #edf2fb;">
-
                                 <!-- Image -->
                                 <img src="https://static.freemomhugs.org/wp-content/uploads/2021/09/child-reading-circle-1024x683.jpeg" alt="..." >
                                 <!-- Body -->
@@ -58,9 +76,8 @@ get_header();
 
                             </div>
                         </a>
-
                     </div>
-                    <div class="col-12 col-lg-4 d-flex mb-6 mb-lg-0">
+                    <div class="col-12 col-lg-4 d-flex mb-6 mb-lg-5">
                         <a href="/organizations" class="text-decoration-none text-dark d-flex">
                             <!-- Card -->
                             <div class="card lift lift-lg" style="border-radius: 20px;background-color: #edf2fb;">
@@ -84,7 +101,7 @@ get_header();
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-lg-4 d-flex mb-6 mb-lg-0">
+                    <div class="col-12 col-lg-4 d-flex mb-6 mb-lg-5">
                         <a href="/films" class="text-decoration-none text-dark d-flex">
                             <!-- Card -->
                             <div class="card d-flex lift lift-lg" style="border-radius: 20px;background-color: #edf2fb;">
